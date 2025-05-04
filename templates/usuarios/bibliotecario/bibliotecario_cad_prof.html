@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IF_Lib ADM</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/styles/style_user_adm.css">
+</head>
+<body class="body_perfil_adm">
+    <header class="cabecalho">
+        
+        <input type="checkbox" id="menu" class="botao_menu_lateral">
+        <label class="menu_lateral" for="menu">
+            <i class="bi bi-list"></i>
+        </label>
+        <nav  class="lista_menu_lateral">
+            <label class="menu_lateral_retornar" for="menu">
+                <i class="bi bi-arrow-bar-left"></i>
+            </label>
+            <ul>
+                <li class="opcao_menu_lateral">
+                    <a href="#"  class="link_menu_lateral novo_conteudo"><i class="bi bi-plus-circle icone_novo"></i>Novo Conteudo</a>
+                </li>
+                <li class="opcao_menu_lateral"><a href="#" class="link_menu_lateral" id="opcao_menu_lateral">Categorias <i class="bi bi-caret-right"></i></a>
+                    <ul class="filtros_menu_lateral">
+                        <li><a href="/templates/filtros/categorias.html" class="filtro_menu">Tecnologia</a></li>
+                        <li><a href="#" class="filtro_menu">Saúde</a></li>
+                        <li><a href="#" class="filtro_menu">Agro</a></li>
+                        <li><a href="#" class="filtro_menu">Educação</a></li>
+                    </ul>
+                </li>
+                <li class="opcao_menu_lateral"><a href="#" class="link_menu_lateral" id="opcao_menu_lateral">Tipos <i class="bi bi-caret-right"></i></a>
+                    <ul class="filtros_menu_lateral">
+                        <li><a href="/templates/filtros/categorias.html" class="filtro_menu">Artigo Cientifíco</a></li>
+                        <li><a href="#" class="filtro_menu">Projeto de Pesquisa</a></li>
+                        <li><a href="#" class="filtro_menu">Monográfia</a></li>
+                        <li><a href="#" class="filtro_menu">TCC</a></li>
+                    </ul>
+                </li>
+                <li class="opcao_menu_lateral"><a href="#" class="link_menu_lateral" id="opcao_menu_lateral">Instituições <i class="bi bi-caret-right"></i></a>
+                    <ul class="filtros_menu_lateral">
+                        <li><a href="/templates/filtros/categorias.html" class="filtro_menu">IFTO</a></li>
+                        <li><a href="#" class="filtro_menu">IFPA</a></li>
+                        <li><a href="#" class="filtro_menu">IFGO</a></li>
+                        <li><a href="#" class="filtro_menu">IFSC</a></li>
+                    </ul>
+                </li>
+                <li class="opcao_menu_lateral"><a href="#" class="link_menu_lateral" id="opcao_menu_lateral">Campus <i class="bi bi-caret-right"></i></a>
+                    <ul class="filtros_menu_lateral">
+                        <li><a href="/templates/filtros/categorias.html" class="filtro_menu">Campus 1 Colinas TO</a></li>
+                        <li><a href="#" class="filtro_menu">Campus 1 Araguaina TO</a></li>
+                        <li><a href="#" class="filtro_menu">Campus 1 Goiania GO</a></li>
+                        <li><a href="#" class="filtro_menu">Campus 1 Belém PA</a></li>
+                    </ul>
+                </li>
+                <li class="opcao_menu_lateral"><a href="#" class="link_menu_lateral" id="opcao_menu_lateral">Cursos <i class="bi bi-caret-right"></i></a>
+                    <ul class="filtros_menu_lateral">
+                        <li><a href="/templates/filtros/categorias.html" class="filtro_menu">ADS</a></li>
+                        <li><a href="#" class="filtro_menu">Pedagogia</a></li>
+                        <li><a href="#" class="filtro_menu">Agronomia</a></li>
+                        <li><a href="#" class="filtro_menu">Direito</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>  
+
+        <a href="/templates/main/index.html" class="botao_home">
+            <img src="/styles/icones/Logo IF_Lib.png" class="img_home">
+        </a>
+        
+        <form class="busca">
+            <input type="search" class="input_busca" placeholder="   Oque você procura?">
+            <a href="/templates/pesquisa/pesquisa.html" class="botao_busca"><i class="bi bi-search"></i></a>
+        </form>
+
+        <ul class="botoes_cabecalho">
+            <a href="#">
+                <li class="botao_cabecalho botao_ver" style="--cor1: #5e0000; --cor2: #d40000; border-color: #d40000;">
+                    <span class="icones icone_fav"><i class="bi bi-star"></i></span>
+                    <span class="texto">Favoritos</span>
+                </li>
+            </a>
+            <a href="#">
+                <li class="botao_cabecalho botao_verde" style="--cor1: #005112; --cor2: #06EA37;">
+                    <span class="icones"><i class="bi bi-envelope"></i></span>
+                    <span class="texto">Notificações</span>
+                </li>
+            </a>
+            <a href="/templates/main/login.html">
+                <li class="botao_cabecalho botao_verde" style="--cor1: #005112; --cor2: #06EA37;">
+                    <span class="icones"><i class="bi bi-person"></i></span>
+                    <span class="texto">Perfil</span>
+                </li>
+            </a>
+        </ul>
+    </header>
+
+    <main class="main_user">
+        <div class="user_perfil">
+            <img src="/styles/imagens/65mrqwxt9ube1.webp" alt="perfil" class="foto_perfil">
+            <hr class="linha_user">
+            <div class="infor_user">
+                <div class="nome_user">
+                    <h1 class="nome">Dr Sheldon Cooper</h1>
+                </div>
+                <div class="infor_geral_user">
+                    <h2 class="infor_geral"><strong class="infor_geral_desk">Bibliotecário:</strong>  123</h2>
+                    <h2 class="infor_geral"><strong class="infor_geral_desk">Matrícula:</strong> 12345678</h2>
+                    <h2 class="infor_geral"><strong class="infor_geral_desk">Instituição:</strong> IFTO</h2>
+                    <h2 class="infor_geral"><strong class="infor_geral_desk">Campus:</strong> Campus 1 Colinas TO</h2>
+                    <h2 class="infor_geral"><strong class="infor_geral_desk">E-mail:</strong> bazzinga@xmail.com</h2>
+                </div>
+            </div>
+        </div>
+        
+        <div class="opcoes_user_adm">
+            <hr class="linha_opcoes_user">
+            <div class="Lista_opcoes_adm">
+                <div class="opcoes">
+                    <a href="#" class="opcao">Informações</a>
+                    <a href="/templates/usuarios/bibliotecario/bibliotecario_cad_prof.html" class="opcao selecionado">Professor</a>
+                    <a href="/templates/usuarios/bibliotecario/bibliotecario_cad_aluno.html" class="opcao">Aluno</a>
+                    <a href="/templates/usuarios/bibliotecario/bibliotecario_cai.html" class="opcao opcao_cad_perfil">CAI</a>
+                    <a href="admin_categoria.html" class="opcao opcao_cad_perfil">CE</a>
+                </div>
+            </div>
+        </div>
+
+        <form class="form_cad">
+            <hi class="titulo_form">Cadastrar novo Professor</hi>
+            <div class="inputs_cad">
+
+                <div class="div_input">
+                    <label>ID</label>
+                    <input class="input_cad">
+                </div>
+                <div class="div_input">
+                    <label>Nome</label>
+                    <input class="input_cad">
+                </div>
+                <div class="div_input">
+                    <label>Matrícula</label>
+                    <input class="input_cad">
+                </div>
+                <div class="div_input">
+                    <label>Formação</label>
+                    <input class="input_cad">
+                </div>
+                <div class="div_input">
+                    <label>Instituição</label>
+                    <select class="input_cad">
+                        <option>Instituições</option>
+                        <option>IFTO</option>
+                        <option>IFTO</option>
+                    </select>
+                </div>
+                <div class="div_input">
+                    <label>Campus</label>
+                    <select class="input_cad">
+                        <option>Campus</option>
+                        <option>Campus 1 Colinas TO</option>
+                        <option>Campus 1 Colinas TO</option>
+                    </select>
+                </div>
+                <div class="div_input">
+                    <label>Img</label>
+                    <input type="image" class="input_cad">
+                </div>
+                <div class="div_input">
+                    <label>E-mail</label>
+                    <input class="input_cad">
+                </div>
+                <div class="div_input">
+                    <label>Senha</label>
+                    <input class="input_cad">
+                </div>
+                <div class="div_input">
+                    <label>Confirmar Senha</label>
+                    <input class="input_cad">
+                </div>
+            </div>
+
+            </div>
+
+            <div class="botoes_form">
+                <button type="submit" class="botao_cad">Cadastrar</button>
+                <button type="reset" class="botao_can">Cancelar</button>
+            </div>
+        </form>
+
+        <div class="consultas_ob">
+            <h1 class="titulo_consulta_ob">Professores</h1>
+            <form class="busca busca_consulta_ob">
+                <input type="search" class="input_busca input_busca_consulta" placeholder="   Digite o nome de um professor">
+                <button type="submit" class="botao_busca"><i class="bi bi-search"></i></button>
+            </form>
+        </div>
+
+        <table class="tablela_ob">
+            <thead class="cabecalho_tabela">
+                <th class="nome_atributo">ID</th>
+                <th class="nome_atributo">Nome</th>
+                <th class="nome_atributo">Matrícula</th>
+                <th class="nome_atributo">Formação</th>
+                <th class="nome_atributo">Instituição</th>
+                <th class="nome_atributo">Campus</th>
+                <th class="nome_atributo">E-mail</th>
+                <th class="nome_atributo">Editar</th>
+                <th class="nome_atributo">Deletar</th>
+            </thead>
+            <tbody class="infor_tabela">
+                <tr>
+                    <td class="atributo">1</td>
+                    <td class="atributo">Victor Oliveira</td>
+                    <td class="atributo">85296345</td>
+                    <td class="atributo">ADS</td>
+                    <td class="atributo">IFTO</td>
+                    <td class="atributo">Campus 1 Colinas</td>
+                    <td class="atributo">victor@xpto.com</td>
+                    <td class="atributo"><a href="#" class="funcao_tabela"> <i class="bi bi-pencil-square"></i> </a></td>
+                    <td class="atributo"><a href="#" class="funcao_tabela"> <i class="bi bi-trash"></i> </a></td>
+                </tr>
+                  
+            </tbody>
+        </table>
+    </main>
+
+    <script src="/scripts.js/app.js"> </script>
+</body>
+</html>

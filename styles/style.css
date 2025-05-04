@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url(style_card.css);
 
 :root {
     --fonte1:"IBM Plex Mono", monospace;
@@ -10,7 +11,7 @@
     --verde2: #3bd610;
     --vermelho: #eb0000;
     --branco: #fff;
-    --cinza1: #b1b1b1;
+    --cinza1: #bebebe;
     --cinza2: #111111;
 
     --fundo_main: linear-gradient( #000000, #102013);
@@ -61,7 +62,7 @@
 
 .lista_menu_lateral {
     position: fixed;
-    top: 2%;
+    top: 3%;
     left: 0%;
     height: 100vh;
     width: 20%;
@@ -80,8 +81,32 @@
     border-bottom: #2c2c2c 1px solid;
 }
 
-.opcao_menu_lateral:hover{
-    background-color: var(--cinza2);
+.filtros_menu_lateral{
+    display: none;
+    margin-top: 10px;
+    list-style-type: none;
+}
+
+.filtros_menu_lateral.mostrar_filtro{
+    display: block;
+}
+
+.filtro_menu{
+    display: flex;
+    padding: 5px;
+    text-decoration: none;
+    color: #b1b1b1;
+    font-family: var(--fonte2);
+    font-size: 1em;
+    font-weight: 300;
+}
+
+.filtro_menu:hover{
+    background-color: #111111;
+}
+
+.filtro_menu:active{
+    background-color: #000;
 }
 
 .link_menu_lateral{
@@ -90,6 +115,10 @@
     text-transform: uppercase;
     font-family: var(--fonte2);
     display: flex;
+}
+
+.link_menu_lateral:hover{
+    color: var(--branco);
 }
 
 .link_menu_lateral:active{
@@ -108,6 +137,14 @@
     color: var(--verde1);
     font-size: 16px;
     font-weight: 500;
+}
+
+.novo_conteudo:hover{
+    color: var(--verde2);
+}
+
+.novo_conteudo:active{
+    color: var(--verde1);
 }
 
 .icone_novo{
@@ -157,14 +194,15 @@
 
 .botao_busca{
     color: var(--verde1);
-    height: 35px;
+    height: 65%;
     width: 35px;
     font-size: 21px;
     position: absolute;
-    margin-left: 85%;
+    margin-left: 90%;
     background-color: transparent;
     cursor: pointer;
     border: none;
+    text-decoration: none;
 }
 
 .botao_busca:active{
@@ -263,70 +301,6 @@
     gap: 40px;
     padding-top: 100px;
     padding-bottom: 60px;
-}
-
-.card{
-    box-shadow: 0px 3px 3px var(--preto);
-    text-decoration: none;
-    border-radius: 28px;
-    background-color: var(--cinza2);
-}
-
-.img_card{
-    width: 220px;
-    height: 220px;
-    border-radius: 28px 28px 0 0;
-}
-
-.base_card{
-    border-radius: 0 0 28px 28px;
-    font-family: var(--fonte2);
-}
-
-.titulo_card{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    color: var(--cinza1);
-    font-size: 10px;
-    width: 220px;
-    height: 84px;
-    background-color: var(--cinza2);
-}
-
-.titulo_card:hover{
-    color: var(--branco);
-}
-
-.titulo_card:active{
-    color: var(--cinza1);
-}
-
-.infor_card{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    color: var(--cinza1);
-    width: 220px;
-    height: 28px;
-    background-color: var(--cinza2);
-    border-radius: 0 0 28px 28px;
-    gap: 10%;
-    font-size: 8px;
-}
-
-.infor_card:hover{
-    color: var(--branco);
-}
-
-.infor_card:active{
-    color: var(--cinza1);
-}
-
-.data_postagem{
-    color: var(--verde1);
 }
 
 .swiper{
@@ -492,7 +466,7 @@
     color: var(--branco);
     background-color: var(--verde1);
     border-radius: 10px 0px 10px 0px;
-    margin-top: 40px;
+    margin-top: 20px;
     transition: 0.1s;
 }
 
