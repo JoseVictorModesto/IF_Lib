@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IF_Lib ADM</title>
+    <title>IF_Lib</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="/styles/style_user_adm.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="/styles/style_filtros.css">
 </head>
-<body class="body_perfil_adm">
+<body class="body_index">
     <header class="cabecalho">
         
         <input type="checkbox" id="menu" class="botao_menu_lateral">
@@ -69,7 +70,7 @@
                     </ul>
                 </li>
             </ul>
-        </nav>
+        </nav>  
 
         <a href="/templates/main/index.html" class="botao_home">
             <img src="/styles/icones/Logo IF_Lib.png" class="img_home">
@@ -101,126 +102,57 @@
             </a>
         </ul>
     </header>
+    <main class="conteudo_filtros">
+        <div class="infor_filtro">
+            <h1 class="titulo_filtro">IFTO</h1>
+            <p class="descricao_filtro_2"><strong class="desc">Nome:</strong> Instituto Federal Do Tocantins</p>
+            <p class="descricao_filtro_2"><strong class="desc">Estado Referente:</strong>Tocantins</p>
+        </div>
 
-    <main class="main_user">
-        <div class="user_perfil">
-            <img src="/styles/imagens/images_perfil.jpg" alt="perfil" class="foto_perfil">
-            <hr class="linha_user">
-            <div class="infor_user">
-                <div class="nome_user">
-                    <h1 class="nome">Thavylla Modesto De Oliveira</h1>
+        <div class="opcoes_filtros">
+            <a href="#" class="opcao selecionado">IFTO</a>
+            <a href="#" class="opcao">IFPA</a>
+            <a href="#" class="opcao">IFGO</a>
+            <a href="#" class="opcao">IFSC</a>  
+        </div>
+
+        <hr class="linha_categoria">
+
+        <div class="opcoes_sub_filtros">
+            <h2 class="titulo_ordem">Ordenados por:</h2>
+            <a href="#" class="ordem_filtros ordem_selecionada">Favoritos</a>
+            <a href="#" class="ordem_filtros">Mais recentes</a>
+            <a href="#" class="ordem_filtros">Mais antigos</a>
+            <a href="#" class="ordem_filtros">A/Z</a>
+            <a href="#" class="ordem_filtros">Z/A</a>
+        </div>
+
+        <div class="lista_conteudo">
+            <div href="#" class="card">
+                <div>
+                    <img src="/styles/imagens/tecnologia-da-informacao-890x500-1-1.jpg" class="img_card">
                 </div>
-                <div class="infor_geral_user">
-                    <h2 class="infor_geral"><strong class="infor_geral_desk">ADMIN:</strong>  123</h2>
-                    <h2 class="infor_geral"><strong class="infor_geral_desk">E-mail:</strong> thavylla@xmail.com</h2>
-                    <h2 class="infor_geral"><strong class="infor_geral_desk">Matrícula:</strong> 12345678</h2>
+                <div class="base_card">
+                    <a href="#" class="titulo_card">Servidores e Microchips</a> 
+                    <div class="infor_card">  
+                        <h2 class="inst_card">IFTO</h2>
+                        <button class="descricao_card">Descrição...</button>
+                    </div>
+                </div>
+                <div class="detalhes_card">
+                    <h2 class="tipo_card"><strong class="card_strong">Tipo</strong> Projeto de Pesquisa</h2>
+                    <h3 class="tipo_card"><strong class="card_strong">Postado em</strong> 25/04/2025</h3>
+                    <p class="paragrafo_card"><strong class="card_strong">Descrição</strong> A expressão "servidores e microchips" não tem um significado direto ou específico no contexto que você pode estar procurando. No entanto, podemos analisar separadamente cada termo e como eles podem estar relacionados:</p>
+                    <button class="retornar_card">Voltar</button>
                 </div>
             </div>
         </div>
-        
-        <div class="opcoes_user_adm">
-            <hr class="linha_opcoes_user">
-            <div class="Lista_opcoes_adm">
-                <div class="opcoes">
-                    <a href="#" class="opcao">Informações</a>
-                    <a href="admin_instituicoes.html" class="opcao">Instituições</a>
-                    <a href="admin_cursos.html" class="opcao">Cursos</a>
-                    <a href="admin_campus.htm" class="opcao">Campus</a>
-                    <a href="admin_categoria.html" class="opcao">Categorias</a>
-                    <a href="admin_tipo.html" class="opcao">Tipos</a>
-                    <a href="admin_cad_bibliotecario.html" class="opcao opcao_cad_perfil">Bibliotecário</a>
-                    <a href="admin_cad_adm.html" class="opcao opcao_cad_perfil selecionado_vermelho">ADMIN</a>
-                </div>
-            </div>
-        </div>
-
-        <form class="form_cad">
-            <hi class="titulo_form">Cadastrar ADMIN</hi>
-
-            <div class="inputs_cad">
-                <div class="div_input">
-                    <label>ID</label>
-                    <input class="input_cad">
-                </div>
-                <div class="div_input">
-                    <label>Nome</label>
-                    <input class="input_cad">
-                </div>
-                <div class="div_input">
-                    <label>Matrícula</label>
-                    <input class="input_cad">
-                </div>
-                <div class="div_input">
-                    <label>Img</label>
-                    <input type="image" class="input_cad">
-                </div>
-                <div class="div_input">
-                    <label>E-mail</label>
-                    <input class="input_cad">
-                </div>
-                <div class="div_input">
-                    <label>Senha</label>
-                    <input class="input_cad">
-                </div>
-                <div class="div_input">
-                    <label>Confirmar Senha</label>
-                    <input class="input_cad">
-                </div>
-            </div>
-
-            <div class="botoes_form">
-                <button type="submit" class="botao_cad">Cadastrar</button>
-                <button type="reset" class="botao_can">Cancelar</button>
-            </div>
-        </form>
-
-        <div class="consultas_ob">
-            <h1 class="titulo_consulta_ob">Administradores</h1>
-            <form class="busca busca_consulta_ob">
-                <input type="search" class="input_busca input_busca_consulta" placeholder="   Digite o nome de um Adiministrador">
-                <button type="submit" class="botao_busca"><i class="bi bi-search"></i></button>
-            </form>
-        </div>
-
-        <table class="tablela_ob">
-            <thead class="cabecalho_tabela">
-                <th class="nome_atributo">ID</th>
-                <th class="nome_atributo">Nome</th>
-                <th class="nome_atributo">Matrícula</th>
-                <th class="nome_atributo">E-mail</th>
-                <th class="nome_atributo">Editar</th>
-                <th class="nome_atributo">Deletar</th>
-            </thead>
-            <tbody class="infor_tabela">
-                <tr>
-                    <td class="atributo">1</td>
-                    <td class="atributo">Victor Oliveira</td>
-                    <td class="atributo">85296345</td>
-                    <td class="atributo">victor@xpto.com</td>
-                    <td class="atributo"><a href="#" class="funcao_tabela"> <i class="bi bi-pencil-square"></i> </a></td>
-                    <td class="atributo"><a href="#" class="funcao_tabela"> <i class="bi bi-trash"></i> </a></td>
-                </tr>
-                <tr>
-                    <td class="atributo">1</td>
-                    <td class="atributo">Victor Oliveira</td>
-                    <td class="atributo">85296345</td>
-                    <td class="atributo">victor@xpto.com</td>
-                    <td class="atributo"><a href="#" class="funcao_tabela"> <i class="bi bi-pencil-square"></i> </a></td>
-                    <td class="atributo"><a href="#" class="funcao_tabela"> <i class="bi bi-trash"></i> </a></td>
-                </tr>
-                <tr>
-                    <td class="atributo">1</td>
-                    <td class="atributo">Victor Oliveira</td>
-                    <td class="atributo">85296345</td>
-                    <td class="atributo">victor@xpto.com</td>
-                    <td class="atributo"><a href="#" class="funcao_tabela"> <i class="bi bi-pencil-square"></i> </a></td>
-                    <td class="atributo"><a href="#" class="funcao_tabela"> <i class="bi bi-trash"></i> </a></td>
-                </tr>               
-            </tbody>
-        </table>
-
+        <div class="mais_conteudos">
+            <button class="mais_conteudos_botao">< Voltar</button>
+            <h1 style="font-weight: 400;">1 / 100</h1>
+            <button class="mais_conteudos_botao">Proximo ></button>
+        </div> 
     </main>
-
     <script src="/scripts.js/app.js"> </script>
 </body>
 </html>

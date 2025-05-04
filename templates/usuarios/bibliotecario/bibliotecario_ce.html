@@ -69,7 +69,7 @@
                     </ul>
                 </li>
             </ul>
-        </nav>
+        </nav> 
 
         <a href="/templates/main/index.html" class="botao_home">
             <img src="/styles/icones/Logo IF_Lib.png" class="img_home">
@@ -104,16 +104,18 @@
 
     <main class="main_user">
         <div class="user_perfil">
-            <img src="/styles/imagens/images_perfil.jpg" alt="perfil" class="foto_perfil">
+            <img src="/styles/imagens/65mrqwxt9ube1.webp" alt="perfil" class="foto_perfil">
             <hr class="linha_user">
             <div class="infor_user">
                 <div class="nome_user">
-                    <h1 class="nome">Thavylla Modesto De Oliveira</h1>
+                    <h1 class="nome">Dr Sheldon Cooper</h1>
                 </div>
                 <div class="infor_geral_user">
-                    <h2 class="infor_geral"><strong class="infor_geral_desk">ADMIN:</strong>  123</h2>
-                    <h2 class="infor_geral"><strong class="infor_geral_desk">E-mail:</strong> thavylla@xmail.com</h2>
+                    <h2 class="infor_geral"><strong class="infor_geral_desk">Bibliotecário:</strong>  123</h2>
                     <h2 class="infor_geral"><strong class="infor_geral_desk">Matrícula:</strong> 12345678</h2>
+                    <h2 class="infor_geral"><strong class="infor_geral_desk">Instituição:</strong> IFTO</h2>
+                    <h2 class="infor_geral"><strong class="infor_geral_desk">Campus:</strong> Campus 1 Colinas TO</h2>
+                    <h2 class="infor_geral"><strong class="infor_geral_desk">E-mail:</strong> bazzinga@xmail.com</h2>
                 </div>
             </div>
         </div>
@@ -123,61 +125,18 @@
             <div class="Lista_opcoes_adm">
                 <div class="opcoes">
                     <a href="#" class="opcao">Informações</a>
-                    <a href="admin_instituicoes.html" class="opcao">Instituições</a>
-                    <a href="admin_cursos.html" class="opcao">Cursos</a>
-                    <a href="admin_campus.htm" class="opcao">Campus</a>
-                    <a href="admin_categoria.html" class="opcao">Categorias</a>
-                    <a href="admin_tipo.html" class="opcao">Tipos</a>
-                    <a href="admin_cad_bibliotecario.html" class="opcao opcao_cad_perfil">Bibliotecário</a>
-                    <a href="admin_cad_adm.html" class="opcao opcao_cad_perfil selecionado_vermelho">ADMIN</a>
+                    <a href="/templates/usuarios/bibliotecario/bibliotecario_cad_prof.html" class="opcao">Professor</a>
+                    <a href="/templates/usuarios/bibliotecario/bibliotecario_cad_aluno.html" class="opcao">Aluno</a>
+                    <a href="/templates/usuarios/bibliotecario/bibliotecario_cai.html" class="opcao opcao_cad_perfil">CAI</a>
+                    <a href="/templates/usuarios/bibliotecario/bibliotecario_ce.html" class="opcao opcao_cad_perfil selecionado_vermelho">CE</a>
                 </div>
             </div>
         </div>
 
-        <form class="form_cad">
-            <hi class="titulo_form">Cadastrar ADMIN</hi>
-
-            <div class="inputs_cad">
-                <div class="div_input">
-                    <label>ID</label>
-                    <input class="input_cad">
-                </div>
-                <div class="div_input">
-                    <label>Nome</label>
-                    <input class="input_cad">
-                </div>
-                <div class="div_input">
-                    <label>Matrícula</label>
-                    <input class="input_cad">
-                </div>
-                <div class="div_input">
-                    <label>Img</label>
-                    <input type="image" class="input_cad">
-                </div>
-                <div class="div_input">
-                    <label>E-mail</label>
-                    <input class="input_cad">
-                </div>
-                <div class="div_input">
-                    <label>Senha</label>
-                    <input class="input_cad">
-                </div>
-                <div class="div_input">
-                    <label>Confirmar Senha</label>
-                    <input class="input_cad">
-                </div>
-            </div>
-
-            <div class="botoes_form">
-                <button type="submit" class="botao_cad">Cadastrar</button>
-                <button type="reset" class="botao_can">Cancelar</button>
-            </div>
-        </form>
-
         <div class="consultas_ob">
-            <h1 class="titulo_consulta_ob">Administradores</h1>
+            <h1 class="titulo_consulta_ob">Conteúdos Externos</h1>
             <form class="busca busca_consulta_ob">
-                <input type="search" class="input_busca input_busca_consulta" placeholder="   Digite o nome de um Adiministrador">
+                <input type="search" class="input_busca input_busca_consulta" placeholder="   Digite o titulo de um CE">
                 <button type="submit" class="botao_busca"><i class="bi bi-search"></i></button>
             </form>
         </div>
@@ -185,37 +144,41 @@
         <table class="tablela_ob">
             <thead class="cabecalho_tabela">
                 <th class="nome_atributo">ID</th>
-                <th class="nome_atributo">Nome</th>
-                <th class="nome_atributo">Matrícula</th>
-                <th class="nome_atributo">E-mail</th>
+                <th class="nome_atributo">Titulo</th>
+                <th class="nome_atributo">Tipo</th>
+                <th class="nome_atributo">Categoria</th>
+                <th class="nome_atributo">Link</th>
                 <th class="nome_atributo">Editar</th>
                 <th class="nome_atributo">Deletar</th>
             </thead>
             <tbody class="infor_tabela">
                 <tr>
                     <td class="atributo">1</td>
-                    <td class="atributo">Victor Oliveira</td>
-                    <td class="atributo">85296345</td>
-                    <td class="atributo">victor@xpto.com</td>
+                    <td class="atributo">IF_Lib</td>
+                    <td class="atributo">Conteudo Externo</td>
+                    <td class="atributo">Tecnologia</td>
+                    <th class="nome_atributo">www.link.com.br</th>
                     <td class="atributo"><a href="#" class="funcao_tabela"> <i class="bi bi-pencil-square"></i> </a></td>
                     <td class="atributo"><a href="#" class="funcao_tabela"> <i class="bi bi-trash"></i> </a></td>
                 </tr>
                 <tr>
                     <td class="atributo">1</td>
-                    <td class="atributo">Victor Oliveira</td>
-                    <td class="atributo">85296345</td>
-                    <td class="atributo">victor@xpto.com</td>
+                    <td class="atributo">IF_Lib</td>
+                    <td class="atributo">Conteudo Externo</td>
+                    <td class="atributo">Tecnologia</td>
+                    <th class="nome_atributo">www.link.com.br</th>
                     <td class="atributo"><a href="#" class="funcao_tabela"> <i class="bi bi-pencil-square"></i> </a></td>
                     <td class="atributo"><a href="#" class="funcao_tabela"> <i class="bi bi-trash"></i> </a></td>
                 </tr>
                 <tr>
                     <td class="atributo">1</td>
-                    <td class="atributo">Victor Oliveira</td>
-                    <td class="atributo">85296345</td>
-                    <td class="atributo">victor@xpto.com</td>
+                    <td class="atributo">IF_Lib</td>
+                    <td class="atributo">Conteudo Externo</td>
+                    <td class="atributo">Tecnologia</td>
+                    <th class="nome_atributo">www.link.com.br</th>
                     <td class="atributo"><a href="#" class="funcao_tabela"> <i class="bi bi-pencil-square"></i> </a></td>
                     <td class="atributo"><a href="#" class="funcao_tabela"> <i class="bi bi-trash"></i> </a></td>
-                </tr>               
+                </tr>    
             </tbody>
         </table>
 

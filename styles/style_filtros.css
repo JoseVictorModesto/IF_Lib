@@ -32,8 +32,30 @@
     padding: 20px;
 }
 
+.descricao_filtro_2{
+    font-family: var(--fonte1);
+    color: var(--cinza1);
+    font-size: 1.1em;
+    font-weight: 300;
+    margin-top: 12px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
 .desc{
     color: var(--verde1);
+}
+
+.curso_inst{
+    color: var(--cinza1);
+}
+
+.curso_inst:hover{
+    color: var(--branco);
+}
+
+.curso_inst:active{
+    color: var(--cinza1);
 }
 
 .linha_categoria{

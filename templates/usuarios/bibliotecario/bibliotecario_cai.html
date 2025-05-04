@@ -25,6 +25,7 @@
                 </li>
                 <li class="opcao_menu_lateral"><a href="#" class="link_menu_lateral" id="opcao_menu_lateral">Categorias <i class="bi bi-caret-right"></i></a>
                     <ul class="filtros_menu_lateral">
+                        <hr class="linha_menu_lateral">
                         <li><a href="/templates/filtros/categorias.html" class="filtro_menu">Tecnologia</a></li>
                         <li><a href="#" class="filtro_menu">Saúde</a></li>
                         <li><a href="#" class="filtro_menu">Agro</a></li>
@@ -33,15 +34,17 @@
                 </li>
                 <li class="opcao_menu_lateral"><a href="#" class="link_menu_lateral" id="opcao_menu_lateral">Tipos <i class="bi bi-caret-right"></i></a>
                     <ul class="filtros_menu_lateral">
-                        <li><a href="/templates/filtros/categorias.html" class="filtro_menu">Artigo Cientifíco</a></li>
+                        <hr class="linha_menu_lateral">
+                        <li><a href="/templates/filtros/tipos.html" class="filtro_menu">Artigo Cientifíco</a></li>
                         <li><a href="#" class="filtro_menu">Projeto de Pesquisa</a></li>
                         <li><a href="#" class="filtro_menu">Monográfia</a></li>
-                        <li><a href="#" class="filtro_menu">TCC</a></li>
+                        <li><a href="#" class="filtro_menu">Conteúdo Externo</a></li>
                     </ul>
                 </li>
                 <li class="opcao_menu_lateral"><a href="#" class="link_menu_lateral" id="opcao_menu_lateral">Instituições <i class="bi bi-caret-right"></i></a>
                     <ul class="filtros_menu_lateral">
-                        <li><a href="/templates/filtros/categorias.html" class="filtro_menu">IFTO</a></li>
+                        <hr class="linha_menu_lateral">
+                        <li><a href="/templates/filtros/instituicoes.html" class="filtro_menu">IFTO</a></li>
                         <li><a href="#" class="filtro_menu">IFPA</a></li>
                         <li><a href="#" class="filtro_menu">IFGO</a></li>
                         <li><a href="#" class="filtro_menu">IFSC</a></li>
@@ -49,7 +52,8 @@
                 </li>
                 <li class="opcao_menu_lateral"><a href="#" class="link_menu_lateral" id="opcao_menu_lateral">Campus <i class="bi bi-caret-right"></i></a>
                     <ul class="filtros_menu_lateral">
-                        <li><a href="/templates/filtros/categorias.html" class="filtro_menu">Campus 1 Colinas TO</a></li>
+                        <hr class="linha_menu_lateral">
+                        <li><a href="/templates/filtros/campus.html" class="filtro_menu">Campus 1 Colinas TO</a></li>
                         <li><a href="#" class="filtro_menu">Campus 1 Araguaina TO</a></li>
                         <li><a href="#" class="filtro_menu">Campus 1 Goiania GO</a></li>
                         <li><a href="#" class="filtro_menu">Campus 1 Belém PA</a></li>
@@ -57,14 +61,15 @@
                 </li>
                 <li class="opcao_menu_lateral"><a href="#" class="link_menu_lateral" id="opcao_menu_lateral">Cursos <i class="bi bi-caret-right"></i></a>
                     <ul class="filtros_menu_lateral">
-                        <li><a href="/templates/filtros/categorias.html" class="filtro_menu">ADS</a></li>
+                        <hr class="linha_menu_lateral">
+                        <li><a href="/templates/filtros/cursos.html" class="filtro_menu">ADS</a></li>
                         <li><a href="#" class="filtro_menu">Pedagogia</a></li>
                         <li><a href="#" class="filtro_menu">Agronomia</a></li>
                         <li><a href="#" class="filtro_menu">Direito</a></li>
                     </ul>
                 </li>
             </ul>
-        </nav>  
+        </nav> 
 
         <a href="/templates/main/index.html" class="botao_home">
             <img src="/styles/icones/Logo IF_Lib.png" class="img_home">
@@ -123,15 +128,15 @@
                     <a href="/templates/usuarios/bibliotecario/bibliotecario_cad_prof.html" class="opcao">Professor</a>
                     <a href="/templates/usuarios/bibliotecario/bibliotecario_cad_aluno.html" class="opcao">Aluno</a>
                     <a href="/templates/usuarios/bibliotecario/bibliotecario_cai.html" class="opcao opcao_cad_perfil selecionado_vermelho">CAI</a>
-                    <a href="admin_categoria.html" class="opcao opcao_cad_perfil">CE</a>
+                    <a href="/templates/usuarios/bibliotecario/bibliotecario_ce.html" class="opcao opcao_cad_perfil">CE</a>
                 </div>
             </div>
         </div>
 
         <div class="consultas_ob">
-            <h1 class="titulo_consulta_ob">Alunos</h1>
+            <h1 class="titulo_consulta_ob">Conteúdos Academicos e Intelectuais</h1>
             <form class="busca busca_consulta_ob">
-                <input type="search" class="input_busca input_busca_consulta" placeholder="   Digite o nome de um professor">
+                <input type="search" class="input_busca input_busca_consulta" placeholder="   Digite o titulo de um CAI">
                 <button type="submit" class="botao_busca"><i class="bi bi-search"></i></button>
             </form>
         </div>
@@ -139,24 +144,67 @@
         <table class="tablela_ob">
             <thead class="cabecalho_tabela">
                 <th class="nome_atributo">ID</th>
-                <th class="nome_atributo">Nome</th>
-                <th class="nome_atributo">Matrícula</th>
+                <th class="nome_atributo">Titulo</th>
+                <th class="nome_atributo">Data de postagem</th>
+                <th class="nome_atributo">Professos Tutor</th>
                 <th class="nome_atributo">Instituição</th>
                 <th class="nome_atributo">Campus</th>
                 <th class="nome_atributo">Curso</th>
-                <th class="nome_atributo">E-mail</th>
+                <th class="nome_atributo">Tipo</th>
+                <th class="nome_atributo">Categoria</th>
                 <th class="nome_atributo">Editar</th>
                 <th class="nome_atributo">Deletar</th>
             </thead>
             <tbody class="infor_tabela">
                 <tr>
                     <td class="atributo">1</td>
-                    <td class="atributo">Victor Oliveira</td>
-                    <td class="atributo">85296345</td>
+                    <td class="atributo">IF_Lib</td>
+                    <td class="atributo">04/05/2025</td>
+                    <td class="atributo">Matheus Oliveira</td>
                     <td class="atributo">IFTO</td>
-                    <td class="atributo">Campus 1 Colinas</td>
+                    <td class="atributo">IFTO-Campus 1 Colinas</td>
                     <td class="atributo">ADS</td>
-                    <td class="atributo">victor@xpto.com</td>
+                    <td class="atributo">Projeto de pesquisa</td>
+                    <td class="atributo">Tecnologia</td>
+                    <td class="atributo"><a href="#" class="funcao_tabela"> <i class="bi bi-pencil-square"></i> </a></td>
+                    <td class="atributo"><a href="#" class="funcao_tabela"> <i class="bi bi-trash"></i> </a></td>
+                </tr>
+                <tr>
+                    <td class="atributo">1</td>
+                    <td class="atributo">IF_Lib</td>
+                    <td class="atributo">04/05/2025</td>
+                    <td class="atributo">Matheus Oliveira</td>
+                    <td class="atributo">IFTO</td>
+                    <td class="atributo">IFTO-Campus 1 Colinas</td>
+                    <td class="atributo">ADS</td>
+                    <td class="atributo">Projeto de pesquisa</td>
+                    <td class="atributo">Tecnologia</td>
+                    <td class="atributo"><a href="#" class="funcao_tabela"> <i class="bi bi-pencil-square"></i> </a></td>
+                    <td class="atributo"><a href="#" class="funcao_tabela"> <i class="bi bi-trash"></i> </a></td>
+                </tr>
+                <tr>
+                    <td class="atributo">1</td>
+                    <td class="atributo">IF_Lib</td>
+                    <td class="atributo">04/05/2025</td>
+                    <td class="atributo">Matheus Oliveira</td>
+                    <td class="atributo">IFTO</td>
+                    <td class="atributo">IFTO-Campus 1 Colinas</td>
+                    <td class="atributo">ADS</td>
+                    <td class="atributo">Projeto de pesquisa</td>
+                    <td class="atributo">Tecnologia</td>
+                    <td class="atributo"><a href="#" class="funcao_tabela"> <i class="bi bi-pencil-square"></i> </a></td>
+                    <td class="atributo"><a href="#" class="funcao_tabela"> <i class="bi bi-trash"></i> </a></td>
+                </tr>
+                <tr>
+                    <td class="atributo">1</td>
+                    <td class="atributo">IF_Lib</td>
+                    <td class="atributo">04/05/2025</td>
+                    <td class="atributo">Matheus Oliveira</td>
+                    <td class="atributo">IFTO</td>
+                    <td class="atributo">IFTO-Campus 1 Colinas</td>
+                    <td class="atributo">ADS</td>
+                    <td class="atributo">Projeto de pesquisa</td>
+                    <td class="atributo">Tecnologia</td>
                     <td class="atributo"><a href="#" class="funcao_tabela"> <i class="bi bi-pencil-square"></i> </a></td>
                     <td class="atributo"><a href="#" class="funcao_tabela"> <i class="bi bi-trash"></i> </a></td>
                 </tr>         
