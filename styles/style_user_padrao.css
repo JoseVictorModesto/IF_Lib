@@ -1,0 +1,96 @@
+@import url(style_user_adm.css);
+@import url(style.css);
+
+.swiper-perfil{
+    z-index: 1;
+    width: 270px;
+    padding: 10px 0;
+}
+
+.caixa{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 1%;
+    margin-top: 10px;
+}
+
+.caixas_perfil_padrao{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    height: 500px;
+    width: 400px;
+    background-color: var(--fundo_form);
+    margin-bottom: 20px;
+}
+
+.titulo_caixa_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--fonte2);
+    background: linear-gradient(330deg, #0e3801, #25810c);
+    color: var(--cinza1);
+    font-size: 0.9em;
+    margin-bottom: 20px;
+    box-shadow: 2px 3px 5px 2px #161616c0;
+    width: 100%;
+    height: 40px;
+}
+
+.titulo_caixa{
+    font-weight: 400;
+}
+
+.linha_opcoes_user{
+    height: 2px;
+    width: 1000px;
+    background-color: var(--verde1);
+    border: none;
+    margin-top: 55px;
+}
+
+.botoes_caixas{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 5%;
+}
+
+.opcao_caixa{
+    padding: 7px;
+    background: linear-gradient(150deg, #25810c, #071D00);
+    font-family: var(--fonte1);
+    color: var(--cinza1);
+    text-decoration: none;
+    box-shadow: 1px 3px 5px 1px #161616c0;
+    font-weight: 400;
+    font-size: 0.8em;
+    border-radius: 10px 0 10px 0;
+}
+
+.cad_cont{
+    background: linear-gradient(150deg, #810c0c, #1d0000);
+}
+
+.opcao_caixa:hover{
+    transform: scale(1.05);
+    background: linear-gradient(150deg, #2c9110, #195807);
+}
+
+.cad_cont:hover{
+    background: linear-gradient(150deg, #911010, #580707);
+}
+
+.opcao_caixa:active{
+    background: linear-gradient(150deg, #25810c, #071D00);
+}
+
+.cad_cont:active{
+    background: linear-gradient(150deg, #810c0c, #1d0000);
+}
+
+.card_perfil{
+    left: 21px;
+}

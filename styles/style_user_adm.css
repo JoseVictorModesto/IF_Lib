@@ -1,7 +1,7 @@
 @import url(style.css);
 
 :root {
-    --fundo: #0F1210;
+    --fundo: linear-gradient(195deg, #000000, #102013, #000000);
     --botao_verde: linear-gradient(#32AC0F, #071D00);
     --botao_verde_active: linear-gradient(#37be12, #0b3000);
     --botao_vermelho: linear-gradient(#ac0f0f, #1d0000);
@@ -11,7 +11,9 @@
 }
 
 .body_perfil_adm{
-    background-color: var(--fundo);
+    background: var(--fundo);
+    background-attachment: fixed;
+    height: 100vh;
 }
 
 .main_user{
@@ -62,7 +64,7 @@
 .nome{
     color: var(--branco);
     font-family: var(--fonte1);
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1.5em;
 }
 
@@ -76,12 +78,13 @@
 .infor_geral{
     color: var(--branco);
     font-family: var(--fonte1);
-    font-size: 1.25em;
-    font-weight: 300;
+    font-size: 1.1em;
+    font-weight: 200;
 }
 
 .infor_geral_desk{
     color: var(--verde2);
+    font-weight: 300;
 }
 
 .linha_opcoes_user{
@@ -114,9 +117,9 @@
     font-family: var(--fonte2);
     text-decoration: none;
     color: var(--verde1);
-    padding: 7px;
+    padding: 6px;
     border: solid var(--verde1) 1px;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 1em;
     border-radius: 5px;
     transition: 0.1s;

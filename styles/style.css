@@ -143,20 +143,15 @@
     cursor: pointer;
 }
 
-.novo_conteudo{
+.filter_conteudo{
     display: flex;
     gap: 5%;
     color: var(--verde1);
     font-size: 16px;
     font-weight: 500;
-}
-
-.novo_conteudo:hover{
-    color: var(--verde2);
-}
-
-.novo_conteudo:active{
-    color: var(--verde1);
+    text-transform: uppercase;
+    font-family: var(--fonte2);
+    justify-content: center;
 }
 
 .icone_novo{
@@ -315,7 +310,7 @@
     padding-bottom: 60px;
 }
 
-.swiper{
+.swiper-index{
     z-index: 1;
     width: 100%;
     padding: 10px 0;
@@ -327,15 +322,15 @@
 
 .swiper-button-next {
     right: 8px;
-    color: var(--verde2);
-    background-color: #063a09;
+    color: var(--verde1);
+    background-color: rgba(0, 0, 0, 0.479);
     border-radius: 5px;
 }
 
 .swiper-button-prev{
     left: 1;
-    color: var(--verde2);
-    background-color: #063a09;
+    color: var(--verde1);
+    background-color: rgba(0, 0, 0, 0.479);
     border-radius: 5px;
 }
 
@@ -428,7 +423,7 @@
     box-shadow: 1px 3px 10px 1px rgba(0, 0, 0, 0.336);
     margin-top: 55px;
     padding: 20px;
-    background: linear-gradient( #057913b9, #0018054f);
+    background: linear-gradient( 155deg,#057913b9, #0018054f);
     width: 80%;
     border-radius: 0px 100px 100px 100px;
 }
@@ -513,8 +508,8 @@
 
 .retornar_login{
     position: fixed;
-    font-size: 40px;
-    padding: 10px;
+    font-size: 35px;
+    padding: 20px;
     color: var(--verde1);
     transition: 0.1s;
 }
