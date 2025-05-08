@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IF_Lib Aluno</title>
+    <title>IF_Lib Professor</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="/styles/style_user_padrao.css">
 </head>
-<body class="body_perfil_adm">
+<body class="body_caixa">
     <header class="cabecalho">
         
         <input type="checkbox" id="menu" class="botao_menu_lateral">
@@ -82,7 +82,7 @@
         </form>
 
         <ul class="botoes_cabecalho">
-            <a href="/templates/usuarios/aluno/aluno_favoritos.html">
+            <a href="/templates/usuarios/professor/professor_favoritos.html">
                 <li class="botao_cabecalho botao_ver" style="--cor1: #5e0000; --cor2: #d40000; border-color: #d40000;">
                     <span class="icones icone_fav"><i class="bi bi-star"></i></span>
                     <span class="texto">Favoritos</span>
@@ -104,40 +104,17 @@
     </header>
 
     <main>
-        <div class="main_user">
-            <div class="user_perfil">
-                <img src="/styles/imagens/WhatsApp Image 2025-05-05 at 14.48.00.jpeg" alt="perfil" class="foto_perfil">
-                <hr class="linha_user">
-                <div class="infor_user">
-                    <div class="nome_user">
-                        <h1 class="nome">Rogerio Bueno</h1>
-                    </div>
-                    <div class="infor_geral_user">
-                        <h2 class="infor_geral"><strong class="infor_geral_desk">Matrícula do Aluno:</strong> 12345678</h2>
-                        <h2 class="infor_geral"><strong class="infor_geral_desk">Instituição:</strong> IFTO</h2>
-                        <h2 class="infor_geral"><strong class="infor_geral_desk">Campus:</strong> Campus 1 Colinas TO</h2>
-                        <h2 class="infor_geral"><strong class="infor_geral_desk">Curso:</strong> ERRO 404...</h2>
-                        <h2 class="infor_geral"><strong class="infor_geral_desk">E-mail:</strong> rogelindo@xmail.com</h2>
-                    </div>
-                </div>
-            </div>
+        <section class="meus_conteudos_validar">
+            <h1 class="titulo_pag_caixa">Validados</h1>
+            <div class="conteudos_validar">
+                <h2 class="validar">Conteúdos a serem validados</h2>
+                <div>
+                    <div class="swiper swiper-index swiper-validar">
             
-            <div class="opcoes_user_adm">
-                <hr class="linha_opcoes_user">
-            </div>
-        </div>
-        <section class="caixa">
-            <div class="caixas_perfil_padrao">
-                <div class="titulo_caixa_div">
-                    <h1 class="titulo_caixa">Meus Conteúdos Academicos</h1>
-                </div>
-                <div>
-                    <div class="swiper swiper-perfil swiper-conteudos">
-                        
                         <div class="swiper-wrapper">
-
-                        <div class="swiper-slide">
-                            <div href="#" class="card card_perfil">
+                          
+                          <div class="swiper-slide">
+                            <div href="#" class="card">
                                 <div>
                                     <img src="/styles/imagens/tecnologia-da-informacao-890x500-1-1.jpg" class="img_card">
                                 </div>
@@ -155,10 +132,10 @@
                                     <button class="retornar_card">Voltar</button>
                                 </div>
                             </div>
-                        </div>
+                          </div>
 
-                        <div class="swiper-slide">
-                            <div href="#" class="card card_perfil">
+                          <div class="swiper-slide">
+                            <div href="#" class="card">
                                 <div>
                                     <img src="/styles/imagens/tecnologia-da-informacao-890x500-1-1.jpg" class="img_card">
                                 </div>
@@ -176,91 +153,136 @@
                                     <button class="retornar_card">Voltar</button>
                                 </div>
                             </div>
+                          </div>
+            
                         </div>
-
-                        </div>
-
+            
                         <div class="swiper-pagination"></div>
-                    
-                        <div class="swiper-button-prev conteudo-prev"></div>
-                        <div class="swiper-button-next conteudo-next"></div>
-                    
+                      
+                        <div class="swiper-button-prev validar-prev"></div>
+                        <div class="swiper-button-next validar-next"></div>
+                      
                         <div class="swiper-scrollbar"></div>
-                    </div>
-                </div>
-                <div class="botoes_caixas">
-                    <a href="#" class="opcao_caixa cad_cont"><i class="bi bi-file-earmark-plus"></i> Novo Conteúdo</a>
-                    <a href="/templates/usuarios/aluno/aluno_conteudo.html" class="opcao_caixa"><i class="bi bi-files"></i> Ver Todos</a>
-                </div>
-            </div>
-
-            <div class="caixas_perfil_padrao">
-                <div class="titulo_caixa_div">
-                    <h1 class="titulo_caixa">Favoritos</h1>
-                </div>
-                <div>
-                    <div class="swiper swiper-perfil swiper-favoritos">
-                        
-                        <div class="swiper-wrapper">
-                        
-                        <div class="swiper-slide">
-                            <div href="#" class="card card_perfil">
-                                <div>
-                                    <img src="/styles/imagens/tecnologia-da-informacao-890x500-1-1.jpg" class="img_card">
-                                </div>
-                                <div class="base_card">
-                                    <a href="#" class="titulo_card">Servidores e Microchips</a> 
-                                    <div class="infor_card">  
-                                        <h2 class="inst_card">IFTO</h2>
-                                        <button class="descricao_card">Descrição...</button>
-                                    </div>
-                                </div>
-                                <div class="detalhes_card">
-                                    <h2 class="tipo_card"><strong class="card_strong">Tipo</strong> Projeto de Pesquisa</h2>
-                                    <h3 class="tipo_card"><strong class="card_strong">Postado em</strong> 25/04/2025</h3>
-                                    <p class="paragrafo_card"><strong class="card_strong">Descrição</strong> A expressão "servidores e microchips" não tem um significado direto ou específico no contexto que você pode estar procurando. No entanto, podemos analisar separadamente cada termo e como eles podem estar relacionados:</p>
-                                    <button class="retornar_card">Voltar</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div href="#" class="card card_perfil">
-                                <div>
-                                    <img src="/styles/imagens/tecnologia-da-informacao-890x500-1-1.jpg" class="img_card">
-                                </div>
-                                <div class="base_card">
-                                    <a href="#" class="titulo_card">Servidores e Microchips</a> 
-                                    <div class="infor_card">  
-                                        <h2 class="inst_card">IFTO</h2>
-                                        <button class="descricao_card">Descrição...</button>
-                                    </div>
-                                </div>
-                                <div class="detalhes_card">
-                                    <h2 class="tipo_card"><strong class="card_strong">Tipo</strong> Projeto de Pesquisa</h2>
-                                    <h3 class="tipo_card"><strong class="card_strong">Postado em</strong> 25/04/2025</h3>
-                                    <p class="paragrafo_card"><strong class="card_strong">Descrição</strong> A expressão "servidores e microchips" não tem um significado direto ou específico no contexto que você pode estar procurando. No entanto, podemos analisar separadamente cada termo e como eles podem estar relacionados:</p>
-                                    <button class="retornar_card">Voltar</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        </div>
-
-                        <div class="swiper-pagination"></div>
-                    
-                        <div class="swiper-button-prev favoritos-prev"></div>
-                        <div class="swiper-button-next favoritos-next"></div>
-                    
-                        <div class="swiper-scrollbar"></div>
-                    </div>
-                    <div class="botoes_caixas">
-                        <a href="/templates/usuarios/aluno/aluno_favoritos.html" class="opcao_caixa"><i class="bi bi-files"></i> Ver Todos</a>
                     </div>
                 </div>
             </div>
         </section>
 
+        <hr class="linha_cont">
+
+        <div class="conteudos_validado">
+            <h1 class="conteudos_validado_titu">Conteúdos Validados</h1>
+        </div>
+        <section class="validados">
+            <div href="#" class="card">
+                <div>
+                    <img src="/styles/imagens/tecnologia-da-informacao-890x500-1-1.jpg" class="img_card">
+                </div>
+                <div class="base_card">
+                    <a href="#" class="titulo_card">Servidores e Microchips</a> 
+                    <div class="infor_card">  
+                        <h2 class="inst_card">IFTO</h2>
+                        <button class="descricao_card">Descrição...</button>
+                    </div>
+                </div>
+                <div class="detalhes_card">
+                    <h2 class="tipo_card"><strong class="card_strong">Tipo</strong> Projeto de Pesquisa</h2>
+                    <h3 class="tipo_card"><strong class="card_strong">Postado em</strong> 25/04/2025</h3>
+                    <p class="paragrafo_card"><strong class="card_strong">Descrição</strong> A expressão "servidores e microchips" não tem um significado direto ou específico no contexto que você pode estar procurando. No entanto, podemos analisar separadamente cada termo e como eles podem estar relacionados:</p>
+                    <button class="retornar_card">Voltar</button>
+                </div>
+            </div>
+            <div href="#" class="card">
+                <div>
+                    <img src="/styles/imagens/tecnologia-da-informacao-890x500-1-1.jpg" class="img_card">
+                </div>
+                <div class="base_card">
+                    <a href="#" class="titulo_card">Servidores e Microchips</a> 
+                    <div class="infor_card">  
+                        <h2 class="inst_card">IFTO</h2>
+                        <button class="descricao_card">Descrição...</button>
+                    </div>
+                </div>
+                <div class="detalhes_card">
+                    <h2 class="tipo_card"><strong class="card_strong">Tipo</strong> Projeto de Pesquisa</h2>
+                    <h3 class="tipo_card"><strong class="card_strong">Postado em</strong> 25/04/2025</h3>
+                    <p class="paragrafo_card"><strong class="card_strong">Descrição</strong> A expressão "servidores e microchips" não tem um significado direto ou específico no contexto que você pode estar procurando. No entanto, podemos analisar separadamente cada termo e como eles podem estar relacionados:</p>
+                    <button class="retornar_card">Voltar</button>
+                </div>
+            </div>
+            <div href="#" class="card">
+                <div>
+                    <img src="/styles/imagens/tecnologia-da-informacao-890x500-1-1.jpg" class="img_card">
+                </div>
+                <div class="base_card">
+                    <a href="#" class="titulo_card">Servidores e Microchips</a> 
+                    <div class="infor_card">  
+                        <h2 class="inst_card">IFTO</h2>
+                        <button class="descricao_card">Descrição...</button>
+                    </div>
+                </div>
+                <div class="detalhes_card">
+                    <h2 class="tipo_card"><strong class="card_strong">Tipo</strong> Projeto de Pesquisa</h2>
+                    <h3 class="tipo_card"><strong class="card_strong">Postado em</strong> 25/04/2025</h3>
+                    <p class="paragrafo_card"><strong class="card_strong">Descrição</strong> A expressão "servidores e microchips" não tem um significado direto ou específico no contexto que você pode estar procurando. No entanto, podemos analisar separadamente cada termo e como eles podem estar relacionados:</p>
+                    <button class="retornar_card">Voltar</button>
+                </div>
+            </div>
+            <div href="#" class="card">
+                <div>
+                    <img src="/styles/imagens/tecnologia-da-informacao-890x500-1-1.jpg" class="img_card">
+                </div>
+                <div class="base_card">
+                    <a href="#" class="titulo_card">Servidores e Microchips</a> 
+                    <div class="infor_card">  
+                        <h2 class="inst_card">IFTO</h2>
+                        <button class="descricao_card">Descrição...</button>
+                    </div>
+                </div>
+                <div class="detalhes_card">
+                    <h2 class="tipo_card"><strong class="card_strong">Tipo</strong> Projeto de Pesquisa</h2>
+                    <h3 class="tipo_card"><strong class="card_strong">Postado em</strong> 25/04/2025</h3>
+                    <p class="paragrafo_card"><strong class="card_strong">Descrição</strong> A expressão "servidores e microchips" não tem um significado direto ou específico no contexto que você pode estar procurando. No entanto, podemos analisar separadamente cada termo e como eles podem estar relacionados:</p>
+                    <button class="retornar_card">Voltar</button>
+                </div>
+            </div>
+            <div href="#" class="card">
+                <div>
+                    <img src="/styles/imagens/tecnologia-da-informacao-890x500-1-1.jpg" class="img_card">
+                </div>
+                <div class="base_card">
+                    <a href="#" class="titulo_card">Servidores e Microchips</a> 
+                    <div class="infor_card">  
+                        <h2 class="inst_card">IFTO</h2>
+                        <button class="descricao_card">Descrição...</button>
+                    </div>
+                </div>
+                <div class="detalhes_card">
+                    <h2 class="tipo_card"><strong class="card_strong">Tipo</strong> Projeto de Pesquisa</h2>
+                    <h3 class="tipo_card"><strong class="card_strong">Postado em</strong> 25/04/2025</h3>
+                    <p class="paragrafo_card"><strong class="card_strong">Descrição</strong> A expressão "servidores e microchips" não tem um significado direto ou específico no contexto que você pode estar procurando. No entanto, podemos analisar separadamente cada termo e como eles podem estar relacionados:</p>
+                    <button class="retornar_card">Voltar</button>
+                </div>
+            </div>
+            <div href="#" class="card">
+                <div>
+                    <img src="/styles/imagens/tecnologia-da-informacao-890x500-1-1.jpg" class="img_card">
+                </div>
+                <div class="base_card">
+                    <a href="#" class="titulo_card">Servidores e Microchips</a> 
+                    <div class="infor_card">  
+                        <h2 class="inst_card">IFTO</h2>
+                        <button class="descricao_card">Descrição...</button>
+                    </div>
+                </div>
+                <div class="detalhes_card">
+                    <h2 class="tipo_card"><strong class="card_strong">Tipo</strong> Projeto de Pesquisa</h2>
+                    <h3 class="tipo_card"><strong class="card_strong">Postado em</strong> 25/04/2025</h3>
+                    <p class="paragrafo_card"><strong class="card_strong">Descrição</strong> A expressão "servidores e microchips" não tem um significado direto ou específico no contexto que você pode estar procurando. No entanto, podemos analisar separadamente cada termo e como eles podem estar relacionados:</p>
+                    <button class="retornar_card">Voltar</button>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="rodape_pag">
@@ -277,8 +299,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-        const swiperConteudos = new Swiper('.swiper-conteudos',{ navigation: { nextEl: '.conteudo-next', prevEl: '.conteudo-prev',}, slidesPerView: 1,});
-        const swiperFavoritoss = new Swiper('.swiper-favoritos',{ navigation: { nextEl: '.favoritos-next', prevEl: '.favoritos-prev',}, slidesPerView: 1,});
+        const swiperValidar = new Swiper('.swiper-validar',{ navigation: { nextEl: '.validar-next', prevEl: '.validar-prev',}, slidesPerView: 5,});
     </script>
 </body>
 </html>

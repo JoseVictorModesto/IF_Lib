@@ -18,11 +18,11 @@
 .caixas_perfil_padrao{
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
+    margin-top: 45px;
     height: 500px;
     width: 400px;
-    background-color: var(--fundo_form);
-    margin-bottom: 20px;
+    background: linear-gradient(#35533cfb, #35533c83, #35533c17);
+    border-radius: 40px;
 }
 
 .titulo_caixa_div{
@@ -30,25 +30,18 @@
     justify-content: center;
     align-items: center;
     font-family: var(--fonte2);
-    background: linear-gradient(330deg, #0e3801, #25810c);
-    color: var(--cinza1);
+    background: radial-gradient(#25810c, #165802);
+    color: var(--branco);
     font-size: 0.9em;
     margin-bottom: 20px;
     box-shadow: 2px 3px 5px 2px #161616c0;
     width: 100%;
     height: 40px;
+    border-radius: 7px;
 }
 
 .titulo_caixa{
-    font-weight: 400;
-}
-
-.linha_opcoes_user{
-    height: 2px;
-    width: 1000px;
-    background-color: var(--verde1);
-    border: none;
-    margin-top: 55px;
+    font-weight: 300;
 }
 
 .botoes_caixas{
@@ -94,3 +87,87 @@
 .card_perfil{
     left: 21px;
 }
+
+.body_caixa{
+    background: var(--fundo_main);
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.meus_conteudos_validar{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.titulo_pag_caixa{
+    display: flex;
+    justify-content: center;
+    margin-top: 62px;
+    margin-bottom: 15px;
+    font-family: var(--fonte1);
+    font-size: 2em;
+    font-weight: 300;
+    color: var(--cinza1);
+    height: 50px;
+    width: 100%;
+    background-color: #35533c4f;
+}
+
+.conteudos_validar{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: var(--fundo_form_d);
+    border-radius: 40px;
+    width: 98%;
+    margin-left: 1%;
+    box-shadow: 1px 2px 5px 3px rgba(0, 0, 0, 0.329);
+}
+
+.validar{
+    font-family: var(--fonte1);
+    font-size: 1.5em;
+    font-weight: 300;
+    margin-top: 5px;
+    color: var(--cinza1);
+    margin-left: 30px;
+}
+
+.linha_cont{
+    display: flex;
+    margin-left: 5%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 2px;
+    width: 90%;
+    background-color: #2f921349;
+    border: none;
+}
+
+.validados{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.conteudos_validado{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    font-family: var(--fonte1);
+    color: var(--cinza1);
+    padding: 5px;
+    border-radius: 15px;
+    background-color: #35533c17;
+    width: 30%;
+    margin-left: 35%;
+}
+
+.conteudos_validado_titu{
+    font-weight: 300;
+    font-size: 1.5em;
+}
+

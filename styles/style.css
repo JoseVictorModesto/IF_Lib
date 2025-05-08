@@ -232,6 +232,15 @@
     margin-left: 77%;
 }
 
+.botoes_cabecalho_adm{
+    font-family: var(--fonte1);
+    list-style: none;
+    display: flex;
+    position: fixed;
+    gap: 2em;
+    margin-left: 83%;
+}
+
 .botao_cabecalho{
     height: 37px;
     width: 37px;
@@ -521,4 +530,31 @@
 
 .retornar_login:active{
     color: var(--verde1);
+}
+
+.img_rodape_pag{
+    height: 35px;
+    width: auto;
+}
+
+.rodape_pag{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    width: 100%;
+    height: 65px;
+    margin-top: 30px;
+    gap: 55%;
+}
+
+.lista_rodape_pag{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.link_pag{
+    font-size: 0.9em;
 }

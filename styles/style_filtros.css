@@ -1,6 +1,7 @@
 @import url(style.css);
 @import url(style_card.css);
 @import url(style_user_adm.css);
+@import url(style_user_padrao.css);
 
 
 
@@ -13,7 +14,11 @@
 .infor_filtro{
     display: flex;
     flex-direction: column;
-    margin-top: 80px;
+    background: var(--fundo_form_d);
+    border-radius: 20px;
+    width: 98%;
+    margin-left: 1%;
+    box-shadow: 1px 2px 5px 3px rgba(0, 0, 0, 0.178);
 }
 
 .titulo_filtro{
@@ -21,7 +26,7 @@
     color: var(--verde1);
     font-size: 2.8em;
     font-weight: 400;
-    margin-left: 20px;
+    margin-left: 15px;
 }
 
 .descricao_filtro{
@@ -29,7 +34,7 @@
     color: var(--cinza1);
     font-size: 1em;
     font-weight: 300;
-    padding: 15px 20px 8px 20px;
+    padding: 15px 10px 8px 15px;
 }
 
 .descricao_filtro_2{
@@ -59,9 +64,9 @@
 .linha_categoria{
     width: 95%;
     height: 1px;
-    background-color: var(--verde1);
+    background-color: #2f92135b;
     border: none;
-    margin-top: 20px;
+    margin-top: 15px;
     margin-left: 2.5%;
 }
 
@@ -69,13 +74,14 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    margin-left: 20px;
+    margin-left: 25px;
+    margin-top: 15px;
 }
 
 .opcoes_sub_filtros{
     display: flex;
     align-items: center;
-    margin-left: 20px;
+    margin-left: 25px;
     gap: 15px;
 }
 
@@ -120,7 +126,7 @@
     align-items: center;
     justify-content: center;
     gap: 50px;
-    padding: 40px;
+    margin-top: 30px;
     font-family: var(--fonte1);
     font-size: 8px;
     color: var(--cinza1);
