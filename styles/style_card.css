@@ -7,7 +7,7 @@
     position: relative;
     overflow: hidden;
     width: 220px;
-    background-color: #34801d;
+    background-color: #1b4729;
 }
 
 .img_card{
@@ -29,7 +29,7 @@
     color: rgb(216, 216, 216);
     font-size: 1.25em;
     height: 84px;
-    background-color: #3a642f;
+    background-color: #3b5743;
     text-decoration: none;
 }
 
@@ -49,7 +49,7 @@
     color: rgb(216, 216, 216);
     width: 220px;
     height: 28px;
-    background-color: #34801d;
+    background-color: #1b4729;
     border-radius: 0 0 28px 28px;
     gap: 30%;
     font-size: 8px;
@@ -65,7 +65,7 @@
 
 .descricao_card{
     border: none;
-    background-color: #34801d;
+    background-color: #1b4729;
     cursor: pointer;
     color: rgb(216, 216, 216);
 }
@@ -95,7 +95,7 @@
     left: 0;
     width: 220px;
     height: 100%;
-    background: linear-gradient(#215212d8, #3a642f, #3a642f);
+    background: linear-gradient(#1b4729da, #1b4729, #1b4729);
     border-radius: 28px;
     transform: translateX(-100%);
     transition: transform .3s ease-out;
@@ -114,7 +114,7 @@
 
 .retornar_card{
     border: none;
-    background-color: #3a642f;
+    background-color: #1b4729;
     cursor: pointer;
     width: 50px;
     font-size: 15px;
@@ -140,4 +140,52 @@
 .paragrafo_card{
     font-size: 0.8em;
     font-weight: 300;
+}
+
+@media (max-width: 600px) {
+    /* reponsividade cards */
+    
+    .card{
+        border-radius: 20px;
+        width: 155px;
+    }
+
+    .img_card{
+        width: 155px;
+        height: 155px;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .base_card{
+        border-radius: 0 0 20px 20px;
+    }
+    
+    .titulo_card{
+        font-size: 0.9em;
+    }
+
+    .infor_card{
+        gap: 10%;
+        margin-right: 10%;
+    }
+
+    .detalhes_card{
+        width: 155px;
+        height: 100%;
+        border-radius: 20px;
+        font-size: 0.9em;
+        gap: 3%;
+    }
+
+    .retornar_card{
+        font-size: 0.9em;
+    }
+
+    .descricao_card{
+        margin-right: 26%;
+    }
+
+    .tipo_card{
+        font-size: 0.9em;
+    }
 }

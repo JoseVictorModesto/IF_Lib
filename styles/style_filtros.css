@@ -1,6 +1,3 @@
-@import url(style.css);
-@import url(style_card.css);
-@import url(style_user_adm.css);
 @import url(style_user_padrao.css);
 
 
@@ -24,9 +21,10 @@
 .titulo_filtro{
     font-family: var(--fonte1);
     color: var(--verde1);
-    font-size: 2.8em;
-    font-weight: 400;
+    font-size: 2.3em;
+    font-weight: 300;
     margin-left: 15px;
+    margin-top: 5px;
 }
 
 .descricao_filtro{
@@ -115,6 +113,7 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 40px;
+    padding: 20px;
 }
 
 .card{
@@ -160,7 +159,7 @@
 .div_pesquisa{
     display: flex;
     justify-content: center;
-    padding: 32px;
+    padding: 20px 5px;
 }
 
 .opcoes_sub_pesquisa{
@@ -169,4 +168,36 @@
     justify-content: center;
     margin-left: 0;
     padding: 20px;
+}
+
+@media (max-width: 600px) {
+    /* reponsividade ordens */
+
+    .opcoes_sub_filtros{
+        flex-wrap: wrap;
+        margin-left: 25px;
+        gap: 15px;
+        margin-top: 0;
+    }
+
+    .titulo_ordem{
+        display: none;
+    }
+
+    .ordem_filtros{
+        font-size: 0.7em;
+    }
+    
+    /* reponsividade ordenar */
+
+    .mais_conteudos{
+        gap: 20px;
+    }
+
+    /* reponsividade lista cards */
+
+    .lista_conteudo{
+        gap: 15px;
+        padding: 10px;
+    }
 }

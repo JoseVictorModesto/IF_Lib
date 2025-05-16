@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IF_Lib</title>
+    <title>IF_Lib Professor</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="/styles/style_filtros.css">
+    <link rel="stylesheet" href="/styles/style_notificacoes.css">
 </head>
-<body class="body_index">
+<body class="body_perfil_adm">
     <header class="cabecalho">
         
         <input type="checkbox" id="menu" class="botao_menu_lateral">
@@ -102,69 +101,51 @@
             </a>
         </ul>
     </header>
-    <main class="conteudo_filtros">
-        <h1 class="titulo_pag_caixa">Campus</h1>
-        <div class="infor_filtro">
-            <h1 class="titulo_filtro">IFTO-Campus 1 Colinas TO</h1>
-            <p class="descricao_filtro_2"><strong class="desc">E-mail:</strong> iftocolinas@xmail.com</p>
-            <p class="descricao_filtro_2"><strong class="desc">Cidade referente:</strong> Colinas do Tocantins</p>
-            <p class="descricao_filtro_2"><strong class="desc">Cursos ofertados: </strong> | <a href="#" class="curso_inst">ADS</a> | <a href="#" class="curso_inst">Pedagogia</a> | <a href="#" class="curso_inst">Agronomia</a> |</p>
-        </div>
 
-        <div class="opcoes_filtros">
-            <a href="#" class="opcao selecionado">IFTO-Campus 1 Colinas TO</a>
-            <a href="#" class="opcao">IFTO-Campus 1 Araguaína TO</a>
-            <a href="#" class="opcao">IFGO-Campus 1 Goiânia GO</a>
-            <a href="#" class="opcao">IFPA-Campus 1 Belém TO</a> 
-        </div>
+    <section class="meus_conteudos_validar">
+        <h1 class="titulo_pag_caixa">Notificações</h1>
+    </section>
 
-        <hr class="linha_categoria">
-
-        <div class="opcoes_sub_filtros">
-            <h2 class="titulo_ordem">Ordenados por:</h2>
-            <a href="#" class="ordem_filtros ordem_selecionada">Favoritos</a>
-            <a href="#" class="ordem_filtros">Mais recentes</a>
-            <a href="#" class="ordem_filtros">Mais antigos</a>
-            <a href="#" class="ordem_filtros">A/Z</a>
-            <a href="#" class="ordem_filtros">Z/A</a>
-        </div>
-
-        <div class="lista_conteudo">
-            <div href="#" class="card">
-                <div>
-                    <img src="/styles/imagens/tecnologia-da-informacao-890x500-1-1.jpg" class="img_card">
-                </div>
-                <div class="base_card">
-                    <a href="#" class="titulo_card">Servidores e Microchips</a> 
-                    <div class="infor_card">  
-                        <h2 class="inst_card">IFTO</h2>
-                        <button class="descricao_card">Descrição...</button>
-                    </div>
-                </div>
-                <div class="detalhes_card">
-                    <h2 class="tipo_card"><strong class="card_strong">Tipo</strong> Projeto de Pesquisa</h2>
-                    <h3 class="tipo_card"><strong class="card_strong">Postado em</strong> 25/04/2025</h3>
-                    <p class="paragrafo_card"><strong class="card_strong">Descrição</strong> A expressão "servidores e microchips" não tem um significado direto ou específico no contexto que você pode estar procurando. No entanto, podemos analisar separadamente cada termo e como eles podem estar relacionados:</p>
-                    <button class="retornar_card">Voltar</button>
+    <main class="mensagens">
+            <div class="mensagem">
+                <h1 class="motivo_msg">Novo Conteudo a Validar</h1>
+                <hr class="linha_msg">
+                <h2 class="infor_msg">O Conteudo "Nome_do_conteudo" está aguardando sua Avaliação.</h2>
+                <div class="opcoes_mensagens">
+                    <a href="#" class="botao_msg">Ver mais</a>
+                    <a href="#" class="botao_msg delete_msg">Deletar</a>
                 </div>
             </div>
-        </div>
-        <div class="mais_conteudos">
-            <button class="mais_conteudos_botao">< Voltar</button>
-            <h1 style="font-weight: 400;">1 / 100</h1>
-            <button class="mais_conteudos_botao">Proximo ></button>
-        </div> 
+            <div class="mensagem">
+                <h1 class="motivo_msg">Você foi marcado em um Conteúdo</h1>
+                <hr class="linha_msg">
+                <h2 class="infor_msg">Você foi marcado no Conteúdo "Nome_do_conteudo" como um dos Autores</h2>
+                <div class="opcoes_mensagens">
+                    <a href="#" class="botao_msg">Ver mais</a>
+                    <a href="#" class="botao_msg delete_msg">Deletar</a>
+                </div>
+            </div>
+            <div class="mensagem">
+                <h1 class="motivo_msg">Conteúdo não Validado</h1>
+                <hr class="linha_msg">
+                <h2 class="infor_msg">O Conteudo "Nome_do_conteudo" não pode ser validado</h2>
+                <h2 class="infor_msg">"mensagem professor"</h2>
+                <div class="opcoes_mensagens">
+                    <a href="#" class="botao_msg">Ver mais</a>
+                    <a href="#" class="botao_msg delete_msg">Deletar</a>
+                </div>
+            </div>
+            <div class="mensagem">
+                <h1 class="motivo_msg">Conteúdo Validado</h1>
+                <hr class="linha_msg">
+                <h2 class="infor_msg">O Conteudo "Nome_do_conteudo" acabou de ser validado e já está publicado no Lib.</h2>
+                <div class="opcoes_mensagens">
+                    <a href="#" class="botao_msg">Ver mais</a>
+                    <a href="#" class="botao_msg delete_msg">Deletar</a>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer class="rodape_pag">
-        <img src="/styles/icones/Logo IF_Lib.png" alt="logo IF_Lib" class="img_rodape_pag">
-        <ul class="lista_rodape_pag">
-            <li><a href="#" class="link_rodape link_pag">Contato</a></li>
-            <li><a href="#" class="link_rodape link_pag">Sobre</a></li>
-            <li><a href="#" class="link_rodape link_pag">Politicas de Privacidade</a></li>
-            <li><a href="#" class="link_rodape link_pag">Mais informações</a></li>
-        </ul>
-    </footer>
-    
-    <script src="/scripts.js/app.js"> </script>
-</body>
+
+    <script src="/scripts.js/app.js"></script>
 </html>

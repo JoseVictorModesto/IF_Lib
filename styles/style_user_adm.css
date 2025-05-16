@@ -1,8 +1,8 @@
 @import url(style.css);
 
 :root {
-    --fundo: linear-gradient(195deg, #000000, #102013, #000000);
-    --botao_verde: linear-gradient(#32AC0F, #071D00);
+    --fundo: linear-gradient(195deg, #000000, #1c211f, #000000);
+    --botao_verde: linear-gradient(#298b0e, #071D00);
     --botao_verde_active: linear-gradient(#37be12, #0b3000);
     --botao_vermelho: linear-gradient(#ac0f0f, #1d0000);
     --botao_vermelho_active: linear-gradient(#c41212, #3f0000);
@@ -63,7 +63,7 @@
     justify-content: center;
     height: 40px;
     width: 500px;
-    background: linear-gradient(#2F9213, #016D18);
+    background: linear-gradient(#20650d, #014610);
     border-radius: 50px;
 }
 
@@ -196,7 +196,7 @@
 .inputs_cad{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 13px;
     margin-top: 20px;
 }
 
@@ -204,7 +204,7 @@
     display: flex;
     flex-direction: column;
     font-family: var(--fonte2);
-    color: var(--cinza2);
+    color: #bdbdbd;
     font-size: 0.9em;
     gap: 5px;
     font-weight: 300;
@@ -297,7 +297,7 @@
 }
 
 .cabecalho_tabela{
-    background: linear-gradient(#00B728, #005112);
+    background: linear-gradient(#005f15, #003d0d);
 }
 
 .nome_atributo{
@@ -309,7 +309,7 @@
 }
 
 .infor_tabela{
-    background-color: var(--fundo_form);
+    background-color:rgba(53, 83, 70, 0.886) ;
     font-family: var(--fonte2);
     color: var(--cinza2);
     font-size: 0.9em;

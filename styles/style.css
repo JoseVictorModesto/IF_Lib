@@ -7,14 +7,16 @@
     --fonte2:"Inter", sans-serif;
 
     --preto: #000;
-    --verde1: #2F9213;
-    --verde2: #3bd610;
-    --vermelho: #eb0000;
+    --verde1: #267510;
+    --verde2: #2c960f;
+    --verde3: #3e6752;
+    --verde4: #1b4731;
+    --vermelho: #be0808;
     --branco: #fff;
     --cinza1: #bebebe;
     --cinza2: #111111;
 
-    --fundo_main: linear-gradient( #000000, #102013);
+    --fundo_main: linear-gradient( #000000, #1c211f);
 }
 
 *{
@@ -23,7 +25,6 @@
 }
 
 .body_index{
-    height: 100vh;
     background: var(--fundo_main);
     background-attachment: fixed;
 }
@@ -52,6 +53,7 @@
     background-color: var(--preto);
     border: none;
     cursor: pointer;
+    z-index: 50;
 }
 
 .menu_lateral:active{
@@ -62,15 +64,16 @@
 
 .lista_menu_lateral {
     position: fixed;
-    top: 3%;
+    top: 1%;
     left: 0%;
-    height: 100vh;
-    width: 20%;
+    height: 100%;
+    width: 300px;
     background-color: var(--preto);
     list-style: none;
     transform: translateX(-100%);
     opacity: 0;
     transition: transform 0.4s, opacity 0.4s; 
+    margin-top: 50px;
 }
 
 
@@ -223,13 +226,15 @@
     margin-right: 70%;
 }
 
-.botoes_cabecalho{
+.botoes_cabecalho {
+    position: fixed;
+    top: 1.9%;
+    right: 2%;
+    display: flex;
+    gap: 2em;
     font-family: var(--fonte1);
     list-style: none;
-    display: flex;
-    position: fixed;
-    gap: 2em;
-    margin-left: 77%;
+    z-index: 1000;  
 }
 
 .botoes_cabecalho_adm{
@@ -446,7 +451,7 @@
     color: #b1b1b1;
     position: absolute;
     margin-left: 60%;
-    background: linear-gradient(to left, #045c0e, #0250147a, #0c1f1028);
+    background: linear-gradient(to left, #045c0eb5, #0250147a, #0c1f1028);
     width: 40%;
     height: 100%;
     border-radius: 160px 0px 0px 160px;
@@ -480,7 +485,7 @@
     padding: 6px;
     width: 200px;
     color: var(--branco);
-    background-color: var(--verde1);
+    background-color: #236710;
     border-radius: 10px 0px 10px 0px;
     margin-top: 20px;
     transition: 0.1s;
@@ -557,4 +562,142 @@
 
 .link_pag{
     font-size: 0.9em;
+}
+
+@media (max-width: 1000px) {
+    /* reponsividade cabeçalho */
+
+    .botoes_cabecalho{
+        margin-left: 73%;
+        gap: 1em;
+    }
+}
+
+@media (max-width: 900px) {
+    /* reponsividade cabeçalho */
+    
+    .botoes_cabecalho{
+        position: fixed;
+        top: 87%; 
+        margin-left: -33%;
+        background-color: #00000096;
+        padding: 10px 25px;
+        gap: 3em;
+        border-radius: 30px;
+        right: 2%;
+    }
+
+    .busca{
+        position: fixed;
+        right: 2%;
+    }
+
+    /* reponsividade redapé */
+
+    .rodape_pag{
+        gap: 20%;
+        height: 120px;
+    }
+
+    .img_rodape_pag{
+        height: 50px;
+        width: auto;
+    }
+
+    .lista_rodape_pag{
+        gap: 10px;
+        font-size: 0.9em;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+    /* reponsividade cabeçalho */
+
+    .img_home{
+        height: 30px;
+        width: auto;
+    }
+
+    .input_busca{
+        height: 30px;
+        width: 300px;
+    }
+
+    .menu_lateral{
+        font-size: 35px;
+        
+    }
+
+    .menu_lateral_retornar{
+        font-size: 35px;
+    }
+
+    .lista_menu_lateral{
+        width: 250px;
+    }
+
+    .botao_busca{
+        height: 65%;
+        width: 35px;
+        font-size: 18px;
+        margin-left: 85%;
+    }
+
+    /* reponsividade redapé */
+
+    .rodape_pag{
+        gap: 10%;
+    }
+}
+
+@media (max-width: 500px) {
+    /* reponsividade cabeçalho */
+
+    .botoes_cabecalho{
+        gap: 1em;
+    }
+
+    .img_home{
+        height: 25px;
+        width: auto;
+        margin-left: 50px;
+    }
+
+    .input_busca{
+        height: 30px;
+        width: 200px;
+    }
+
+    .menu_lateral{
+        font-size: 30px;
+        margin-left: 10px;
+        z-index: 50;
+    }
+
+    .menu_lateral_retornar{
+        font-size: 30px;
+    }
+
+    .img_home:active{
+        height: 27px;
+        transition: .1s;
+    }   
+
+    /* reponsividade redapé */
+
+    .rodape_pag{
+        gap: 10%;
+        height: 100px;
+    }
+
+    .img_rodape_pag{
+        height: 40px;
+    }
+
+    .lista_rodape_pag{
+        gap: 7px;
+        font-size: 0.8em;
+        flex-direction: column;
+    }
 }

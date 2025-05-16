@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IF_Lib</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="/styles/style_conteudo.css">
+</head>
+<body class="body_conteudo">
+    <header class="cabecalho">
+        
+        <input type="checkbox" id="menu" class="botao_menu_lateral">
+        <label class="menu_lateral" for="menu">
+            <i class="bi bi-list"></i>
+        </label>
+        <nav  class="lista_menu_lateral">
+            <ul>
+                <li class="opcao_menu_lateral">
+                    <h1 class="filter_conteudo">Filtros<i class="bi bi-funnel"></i></h1>
+                </li>
+                <li class="opcao_menu_lateral"><a href="#" class="link_menu_lateral" id="opcao_menu_lateral">Categorias <i class="bi bi-caret-right"></i></a>
+                    <ul class="filtros_menu_lateral">
+                        <hr class="linha_menu_lateral">
+                        <li><a href="/templates/filtros/categorias.html" class="filtro_menu">Tecnologia</a></li>
+                        <li><a href="#" class="filtro_menu">Saúde</a></li>
+                        <li><a href="#" class="filtro_menu">Agro</a></li>
+                        <li><a href="#" class="filtro_menu">Educação</a></li>
+                    </ul>
+                </li>
+                <li class="opcao_menu_lateral"><a href="#" class="link_menu_lateral" id="opcao_menu_lateral">Tipos <i class="bi bi-caret-right"></i></a>
+                    <ul class="filtros_menu_lateral">
+                        <hr class="linha_menu_lateral">
+                        <li><a href="/templates/filtros/tipos.html" class="filtro_menu">Artigo Cientifíco</a></li>
+                        <li><a href="#" class="filtro_menu">Projeto de Pesquisa</a></li>
+                        <li><a href="#" class="filtro_menu">Monográfia</a></li>
+                        <li><a href="#" class="filtro_menu">Conteúdo Externo</a></li>
+                    </ul>
+                </li>
+                <li class="opcao_menu_lateral"><a href="#" class="link_menu_lateral" id="opcao_menu_lateral">Instituições <i class="bi bi-caret-right"></i></a>
+                    <ul class="filtros_menu_lateral">
+                        <hr class="linha_menu_lateral">
+                        <li><a href="/templates/filtros/instituicoes.html" class="filtro_menu">IFTO</a></li>
+                        <li><a href="#" class="filtro_menu">IFPA</a></li>
+                        <li><a href="#" class="filtro_menu">IFGO</a></li>
+                        <li><a href="#" class="filtro_menu">IFSC</a></li>
+                    </ul>
+                </li>
+                <li class="opcao_menu_lateral"><a href="#" class="link_menu_lateral" id="opcao_menu_lateral">Campus <i class="bi bi-caret-right"></i></a>
+                    <ul class="filtros_menu_lateral">
+                        <hr class="linha_menu_lateral">
+                        <li><a href="/templates/filtros/campus.html" class="filtro_menu">Campus 1 Colinas TO</a></li>
+                        <li><a href="#" class="filtro_menu">Campus 1 Araguaina TO</a></li>
+                        <li><a href="#" class="filtro_menu">Campus 1 Goiania GO</a></li>
+                        <li><a href="#" class="filtro_menu">Campus 1 Belém PA</a></li>
+                    </ul>
+                </li>
+                <li class="opcao_menu_lateral"><a href="#" class="link_menu_lateral" id="opcao_menu_lateral">Cursos <i class="bi bi-caret-right"></i></a>
+                    <ul class="filtros_menu_lateral">
+                        <hr class="linha_menu_lateral">
+                        <li><a href="/templates/filtros/cursos.html" class="filtro_menu">ADS</a></li>
+                        <li><a href="#" class="filtro_menu">Pedagogia</a></li>
+                        <li><a href="#" class="filtro_menu">Agronomia</a></li>
+                        <li><a href="#" class="filtro_menu">Direito</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav> 
+
+        <a href="/templates/main/index.html" class="botao_home">
+            <img src="/styles/icones/Logo IF_Lib.png" class="img_home">
+        </a>
+        
+        <form class="busca">
+            <input type="search" class="input_busca" placeholder="   Oque você procura?">
+            <a href="/templates/pesquisa/pesquisa.html" class="botao_busca"><i class="bi bi-search"></i></a>
+        </form>
+
+        <ul class="botoes_cabecalho">
+            <a href="/templates/usuarios/professor/professor_favoritos.html">
+                <li class="botao_cabecalho botao_ver" style="--cor1: #5e0000; --cor2: #d40000; border-color: #d40000;">
+                    <span class="icones icone_fav"><i class="bi bi-star"></i></span>
+                    <span class="texto">Favoritos</span>
+                </li>
+            </a>
+            <a href="#">
+                <li class="botao_cabecalho botao_verde" style="--cor1: #005112; --cor2: #06EA37;">
+                    <span class="icones"><i class="bi bi-envelope"></i></span>
+                    <span class="texto">Notificações</span>
+                </li>
+            </a>
+            <a href="/templates/main/login.html">
+                <li class="botao_cabecalho botao_verde" style="--cor1: #005112; --cor2: #06EA37;">
+                    <span class="icones"><i class="bi bi-person"></i></span>
+                    <span class="texto">Perfil</span>
+                </li>
+            </a>
+        </ul>
+    </header>
+    <main class="main_conteudo">
+        <section class="folha_conteudo">
+            <div class="conteudo_part_capa">
+                <div class="capa_part">
+                    <img class="logo_if" src="/styles/imagens/Logotipo_IFET.svg.png">
+                    <h1 class="fonte_conteudo"><strong class="infor_conteudo">IFTO</strong></h1>
+                    <h1 class="fonte_conteudo"><strong class="infor_conteudo">INSTITUITO FEDERAL DE EDUCAÇÃO, CIÊNCIA E TECNOLOGIA DO TOCANTINS</strong></h1>
+                    <h1 class="fonte_conteudo"><strong class="infor_conteudo">CAMPUS:</strong> IFTO Campus 1 Colinas</h1>
+                    <h1 class="fonte_conteudo"><strong class="infor_conteudo">CURSO SUPERIOR:</strong> Análise e Desenvolvimento de Sistemas (ADS)</h1>
+                </div>
+                <div>
+                    <h1 class="fonte_conteudo"><strong class="infor_conteudo">AUTOR(ES):</strong> Nome do autor(es)...</h1>
+                </div>
+                <div>
+                    <h1 class="fonte_conteudo titulo_conteudo">IF_Lib</h1>
+                </div>
+                <div class="capa_part">
+                    <h1 class="fonte_conteudo">Colinas do Tocantins</h1>
+                    <h1 class="fonte_conteudo">05/06/2025</h1>
+                </div>
+            </div>
+
+            <hr class="linha_conteudo">
+
+            <div class="conteudo_part">
+                <div class="conteudo_part_texto">
+                    <h1 class="fonte_conteudo titulo_texto">Objetivo</h1>
+                    <p class="fonte_conteudo textos">O IF_Lib é um sistema web que tem como foco compartilhar e disseminar 
+                        conteúdos acadêmicos e intelectuais produzidos pelos próprios alunos e professores dentro das instituições
+                         de ensino federais, para que qualquer pessoa possa acessá-los de forma fácil através da internet sendo o 
+                         mesmo estudante de uma das instituições ou não. Ele permitirá que alunos e professores possam postar seus
+                          próprios conteúdos e trabalhos acadêmicos de forma prática e rápida, passando por um processos de 
+                          validação antes de serem postados aos usuários em geral, garantindo que assim possa ser mantido os 
+                          padrões exigidos pelas instituições, além de contar com funções que facilitam a interação com os 
+                          autores, pesquisas, consultas, comunicação, cadastro, controle dos conteúdos e gerenciamento do sistema.
+                           O sistema terá como foco inicial as instituições federais do Tocantins, porém será projetado de forma
+                           escalável caso seja necessário expandir para outras instituições de outras regiões.</p>
+                </div>
+
+                <div class="conteudo_part_texto">
+                    <h1 class="fonte_conteudo titulo_texto">Como o sistema funciona?</h1>
+                    <p class="fonte_conteudo textos">Ao entrar no sistema qualquer usuário será redirecionado à página principal onde ele poderá ter acesso aos CAI e ferramentas de consultas, porém somente usuários que estudam em um dos IFs e já possuem cadastro realizado no sistema pelos bibliotecários podem ter acesso a funcionalidades mais avançadas.
+                        Após ser realizado o login (utilizando e-mail institucional e senha) do usuário ele será redirecionado para seu determinado tipo de perfil, podendo ser Aluno, Professor, Bibliotecário ou Admin.
+                        Caso algum aluno resolva publicar algum CAI novo dentro do lib ele deve selecionar a opção referente ao cadastro de novo conteúdo e preencher as informações necessárias, por fim informar o professor tutor do projeto e confirmar a solicitação.
+                        Após isso uma notificação será encaminhada ao professor, informando que ele possui um conteúdo a ser validado, o professor poderá clicar na notificação na notificação ou no campo de conteúdos a validar, onde ele será redirecionado para a página que estará todos os conteúdos no qual ele foi marcado, aguardando para serem validados.
+                        O professor após avaliar o conteúdo ele terá duas opções, recusar a validação ou validar o CAI, caso seja recusada a validação o professor deve preencher um campo no qual informa o motivo da recusa para que o aluno receba uma notificação contendo a informação e corrija, caso seja validado o CAI será salvo no perfil dos autores, professor e publicado no lib para que todos tenham acesso.
+                        OBS: PROFESSORES NÃO PRECISAM DE VALIDAÇÃO PARA PUBLICAR CAI OU CE, BASTARÁ APENAS PREENCHER AS INFORMAÇÕES NECESSÁRIAS E PUBLICAR.
+                        Caso algum usuário deseje procurar algum conteúdo dentro do sistema ele terá opções que facilitará suas consultas, como por exemplo, “filtros” que irão filtrar CAI por categoria, tipo, data, instituição, campus ou curso, o usuário contará também com um campo de pesquisa onde ele conseguirá procurá CAI através de palavras-chave
+                        Ao selecionar um CAI específico ele será redirecionado para a página que conterá todas as informações cadastradas pelos autores e conteúdos adicionais disponibilizados pelos mesmos, possuirá também uma opção de “favoritar” em que ao ser selecionada o usuário poderá salvar esse CAI em sua caixa de favoritos no seu perfil, no fim do conteúdo haverá a “Caixa de perguntas” referente a esse CAI.
+                        Se o usuário tiver alguma dúvida a respeito do CAI ele clicar na caixa de perguntas onde será redirecionado para a área de perguntas e respostas, após isso ele poderá visualizar as perguntas e respostas já publicadas ou digitar uma nova pergunta no campo reservado para essa função e enviar.
+                        Uma notificação será encaminhada para os autores, onde somente eles terão permissão para responder, ao clicar na notificação ou acessando diretamente a caixa de perguntas do CAI correspondente ele poderá ter acesso ao campo reservado para respostas dos autores e enviar uma resposta ao usuário que fez a pergunta, para que assim ele receba uma notificação e possa também vizualiza-la.
+                        OBS: USUÁRIOS ADMINISTRADORES NÃO POSSUEM ACESSO A FUNÇÕES AVANÇADA EM CAI, COMO POR EXEMPLO CADASTRAR CAI, FAVORITAR OU  FAZER PERGUNTAS, ESSAS FUNÇÕES SÃO RESERVADAS A USUARIOS PADRÃO (ALUNOS E PROFESSORES), PORÉM POSSUIRÃO FUNÇÕES ADMINISTRATIVAS DENTRO DOS CONTEÚDOS DE EDIÇÃO E DELETAR.
+                        Caso um ADM precise editar ou deletar um CAI, ele deverá selecionar o conteúdo específico, escolher a ação necessária e informar o motivo da edição ou deleção, para que assim os autores possam receber uma notificação contendo essa informação.
+                        Dentro da página de perfil cada usuário terá suas informações, funções e recursos específicos, usuários padrões possuirão funcionalidades voltadas para cadastramento consultas e administração dos seus conteúdos, já usuários administradores possuirão funcionalidades relacionadas a cadastramento, consultas e gerenciamento de usuários, conteúdos e atributos do sistema.
+                    </p>
+                </div>
+            </div>
+
+            <hr class="linha_conteudo">
+
+            <div class="conteudo_part">
+                <div class="conteudo_part_galeria">
+                    <h1 class="fonte_conteudo titulo_galeria">Galeria de Imagens</h1>
+                    <div class="img_galeria">
+                        <a href="#"><img src="/styles/imagens/IF-LIB (WHITE).png" class="img_conteudo"></a>
+                        <a href="#"><img src="/styles/imagens/IF-LIB (BLACK).png" class="img_conteudo"></a>
+                        <a href="#"><img src="/styles/imagens/tecnologia-da-informacao-890x500-1-1.jpg" class="img_conteudo"></a>
+                        <a href="#"><img src="/styles/imagens/1714960261525.jpg" class="img_conteudo"></a>
+                        <a href="#"><img src="/styles/imagens/IF-LIB (WHITE).png" class="img_conteudo"></a>
+                        <a href="#"><img src="/styles/imagens/tecnologia-da-informacao-890x500-1-1.jpg" class="img_conteudo"></a>
+                        <a href="#"><img src="/styles/imagens/1714960261525.jpg" class="img_conteudo"></a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="linha_conteudo">
+
+            <div class="conteudo_part">
+                <div class="conteudo_part_galeria">
+                    <h1 class="fonte_conteudo titulo_galeria">Conteúdos Adicionais</h1>
+                    <div class="imagens_cad_cont conteudos_adicionais">
+                        <div>
+                            <a href="#" class="adc_mais cont_extra cont_adic"><i class="bi bi-file-earmark-check"></i></a>
+                            <h1 class="fonte_conteudo titulo_texto">Documento 01</h1>
+                        </div>
+                        <div>
+                            <a href="#" class="adc_mais cont_extra cont_adic"><i class="bi bi-file-earmark-check"></i></a>
+                            <h1 class="fonte_conteudo titulo_texto">Documento 02</h1>
+                        </div>
+                        <div>
+                            <a href="#" class="adc_mais cont_extra cont_adic"><i class="bi bi-file-earmark-check"></i></a>
+                            <h1 class="fonte_conteudo titulo_texto">Documento 03</h1>
+                        </div>
+                        <div>
+                            <a href="#" class="adc_mais cont_extra cont_adic"><i class="bi bi-file-earmark-check"></i></a>
+                            <h1 class="fonte_conteudo titulo_texto">Documento 04</h1>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+
+            <hr class="linha_conteudo">
+
+            <div class="conteudo_part">
+                <div class="conteudo_part_galeria">
+                    <h1 class="fonte_conteudo titulo_galeria">Referências</h1>
+                    <ul class="lista_ref">
+                        <li><a href="https://pt.wikipedia.org/wiki/Tecnologia" class="ref">https://pt.wikipedia.org/wiki/Tecnologia</a></li>
+                        <li><a href="https://pt.wikipedia.org/wiki/Tecnologia" class="ref">https://pt.wikipedia.org/wiki/Tecnologia</a></li>
+                        <li><a href="https://pt.wikipedia.org/wiki/Tecnologia" class="ref">https://pt.wikipedia.org/wiki/Tecnologia</a></li>
+                        <li><a href="https://pt.wikipedia.org/wiki/Tecnologia" class="ref">https://pt.wikipedia.org/wiki/Tecnologia</a></li>
+                    </ul>
+                </div> 
+            </div>
+        </section>
+
+        <section class="mais_conteudo">
+            <div class="autor_conteudo">
+                <h1 class="titulo_mais">Professor Tutor</h1>
+                <div class="div_infor_cont">
+                    <a href="/templates/usuarios/professor/professor_visita.html" class="infor_mais link_perfil">Walter White</a>
+                </div>
+                <h1 class="titulo_mais">Autor(es)</h1>
+                <div class="div_infor_cont">
+                    <a href="/templates/usuarios/aluno/aluno_visita.html" class="infor_mais link_perfil">José Victor Modesto</a>
+                    <a href="/templates/usuarios/aluno/aluno_visita.html" class="infor_mais link_perfil">Maria Luiza Guerra</a>
+                    <a href="/templates/usuarios/aluno/aluno_visita.html" class="infor_mais link_perfil">Mônica Guerra</a>
+                    <a href="/templates/usuarios/aluno/aluno_visita.html" class="infor_mais link_perfil">Nathanael Biasi</a>
+                </div>
+            </div>
+            <div class="autor_conteudo">
+                <h1 class="titulo_mais">Descrição</h1>
+                <div class="div_infor_cont">
+                    <p class="infor_mais">
+                        IF_Lib é um sistema web que tem como foco compartilhar e disseminar 
+                        conteúdos acadêmicos e intelectuais produzidos pelos próprios alunos e professores dentro das instituições
+                        de ensino federais, para que qualquer pessoa possa acessá-los de forma fácil através da internet sendo o 
+                        mesmo estudante de uma das instituições ou não.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="favoritar">
+            <button class="botao_favoritar"><i class="bi bi-star-fill fav"></i></button>
+            <h1 class="favor">Favoritar</h1>
+        </section>
+
+        <h1 class="caixa_de_pr_titulo">Perguntas e Respostas</h1>
+
+        <section class="caixa_de_pr">
+                <div>
+                    <h2 class="pergunta indent_user1">Pergunta / Nome_do_User</h2>
+                    <h2 class="pergunta">fulaiwubgfl ghliuasehgliushgli sgblhiuhfgl hflaerghi fulaiwubgfl ghliuasehgliushgli sgblhiuhfgl hflaerghi fulaiwubgfl ghliuasehgliushgli sgblhiuhfgl hflaerghi fulaiwubgfl ghliuasehgliushgli sgblhiuhfgl hflaerghi</h2>
+                </div>
+                <div>
+                    <h2 class="pergunta resposta indent_user2">Resposta / Nome_do_Autor</h2>
+                    <h2 class="pergunta resposta">fulaiwubgfl ghliuasehgliushgli sgblhiuhfgl hflaerghi fulaiwubgfl ghliuasehgliushgli sgblhiuhfgl hflaerghi fulaiwubgfl ghliuasehgliushgli sgblhiuhfgl hflaerghi</h2>
+                </div>
+                <div>
+                    <h2 class="pergunta resposta indent_user2">Resposta / Nome_do_Autor</h2>
+                    <h2 class="pergunta resposta">fulaiwubgfl ghliuasehgliushgli sgblhiuhfgl hflaerghi fulaiwubgfl ghliuasehgliushgli sgblhiuhfgl hflaerghi fulaiwubgfl ghliuasehgliushgli sgblhiuhfgl hflaerghi</h2>
+                </div>
+                <div>
+                    <h2 class="pergunta indent_user1">Pergunta / Nome_do_User</h2>
+                    <h2 class="pergunta">fulaiwubgfl ghliuasehgliushgli sgblhiuhfgl hflaerghi fulaiwubgfl ghliuasehgliushgli sgblhiuhfgl hflaerghi fulaiwubgfl ghliuasehgliushgli sgblhiuhfgl hflaerghi fulaiwubgfl ghliuasehgliushgli sgblhiuhfgl hflaerghi</h2>
+                </div>
+                <div>
+                    <h2 class="pergunta resposta indent_user2">Resposta / Nome_do_Autor</h2>
+                    <h2 class="pergunta resposta">fulaiwubgfl ghliuasehgliushgli sgblhiuhfgl hflaerghi fulaiwubgfl ghliuasehgliushgli sgblhiuhfgl hflaerghi fulaiwubgfl ghliuasehgliushgli sgblhiuhfgl hflaerghi</h2>
+                </div>
+            </section>
+            <form class="formulario_pergunta">
+                <input placeholder="Gostaria de fazer uma pergunta?" class="input_pergunta">
+                <button type="submit" class="enviar_pergunta">Enviar</button>
+            </form>
+
+            <hr class="linha_conteudo">
+    </main>
+
+    <footer class="rodape_pag">
+        <img src="/styles/icones/Logo IF_Lib.png" alt="logo IF_Lib" class="img_rodape_pag">
+        <ul class="lista_rodape_pag">
+            <li><a href="#" class="link_rodape link_pag">Contato</a></li>
+            <li><a href="#" class="link_rodape link_pag">Sobre</a></li>
+            <li><a href="#" class="link_rodape link_pag">Politicas de Privacidade</a></li>
+            <li><a href="#" class="link_rodape link_pag">Mais informações</a></li>
+        </ul>
+    </footer>
+
+    <script src="/scripts.js/app.js"></script>
+</body>
+</html>
